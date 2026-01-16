@@ -4,6 +4,9 @@
 #include <sys/types.h> 
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <std-lib.h> 
+#include <string.h> 
+#include <unistd.h>
 
 void error(char *msg)
 {
