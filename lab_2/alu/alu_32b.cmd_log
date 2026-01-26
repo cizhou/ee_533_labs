@@ -1,0 +1,1 @@
+sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/alu/alu_32b.sch" alu_32b.vf

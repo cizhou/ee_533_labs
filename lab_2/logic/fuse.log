@@ -1,0 +1,28 @@
+Determining compilation order of HDL files
+Analyzing Verilog file xor2_8b.vf
+Analyzing Verilog file xor2_32b.vf
+Analyzing Verilog file xor2_32_tb.v
+Analyzing Verilog file C:/Xilinx/10.1/ISE/verilog/src/glbl.v
+Saving Verilog parse-tree work.xor2_8b into c:/documents and settings/student/my
+documents/logic/isim/work/xor2_8b.sdb
+Saving Verilog parse-tree work.xor2_32b into c:/documents and
+settings/student/my documents/logic/isim/work/xor2_32b.sdb
+Saving Verilog parse-tree work.xor2_32b_tb into c:/documents and
+settings/student/my documents/logic/isim/work/xor2_32b_tb.sdb
+Saving Verilog parse-tree work.glbl into c:/documents and settings/student/my
+documents/logic/isim/work/glbl.sdb
+Starting static elaboration
+Restoring Verilog parse-tree unisims_ver.XOR2 from
+c:/xilinx/10.1/ise/verilog/hdp/nt/unisims_ver/unisims_ver.sdbl
+Completed static elaboration
+Fuse Memory Usage: 54152 Kb
+Fuse CPU Usage: 61 ms
+Compiling module glbl
+Compiling module XOR2
+Compiling module xor2_8b
+Compiling module xor2_32b
+Compiling module xor2_32b_tb
+Compiled 5 Verilog Units
+Built simulation executable xor2_32b_tb_isim_beh.exe
+Fuse Memory Usage: 55436 Kb
+Fuse CPU Usage: 77 ms

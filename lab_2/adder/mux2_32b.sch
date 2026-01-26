@@ -1,0 +1,124 @@
+VERSION 6
+BEGIN SCHEMATIC
+    BEGIN ATTR DeviceFamilyName "spartan3a"
+        DELETE all:0
+        EDITNAME all:0
+        EDITTRAIT all:0
+    END ATTR
+    BEGIN NETLIST
+        SIGNAL A(31:0)
+        SIGNAL B(31:0)
+        SIGNAL XLXN_3
+        SIGNAL S
+        SIGNAL Y(31:0)
+        SIGNAL B(31:16)
+        SIGNAL B(15:0)
+        SIGNAL A(31:16)
+        SIGNAL A(15:0)
+        SIGNAL Y(31:16)
+        SIGNAL Y(15:0)
+        PORT Input A(31:0)
+        PORT Input B(31:0)
+        PORT Input S
+        PORT Output Y(31:0)
+        BEGIN BLOCKDEF mux2_16b
+            TIMESTAMP 2026 1 24 22 28 43
+            RECTANGLE N 64 -192 192 -64 
+            LINE N 64 -160 0 -160 
+            RECTANGLE N 0 -172 64 -148 
+            LINE N 64 -96 0 -96 
+            RECTANGLE N 0 -108 64 -84 
+            LINE N 192 -128 256 -128 
+            RECTANGLE N 192 -140 256 -116 
+            LINE N 128 -64 128 0 
+        END BLOCKDEF
+        BEGIN BLOCK XLXI_17 mux2_16b
+            PIN A(15:0) A(15:0)
+            PIN B(15:0) B(15:0)
+            PIN Y(15:0) Y(15:0)
+            PIN S S
+        END BLOCK
+        BEGIN BLOCK XLXI_18 mux2_16b
+            PIN A(15:0) A(31:16)
+            PIN B(15:0) B(31:16)
+            PIN Y(15:0) Y(31:16)
+            PIN S S
+        END BLOCK
+    END NETLIST
+    BEGIN SHEET 1 3520 2720
+        BEGIN BRANCH A(31:0)
+            WIRE 1264 1120 1264 1584
+        END BRANCH
+        BEGIN BRANCH B(31:0)
+            WIRE 1392 1120 1392 1584
+        END BRANCH
+        BEGIN BRANCH S
+            WIRE 1696 1792 1904 1792
+            WIRE 1904 1792 2080 1792
+            WIRE 1904 1328 2080 1328
+            WIRE 2080 1328 2080 1792
+            WIRE 1904 1552 1904 1792
+        END BRANCH
+        BEGIN BRANCH Y(31:0)
+            WIRE 2320 1168 2320 1200
+            WIRE 2320 1200 2320 1424
+            WIRE 2320 1424 2320 1488
+        END BRANCH
+        BUSTAP 1392 1456 1488 1456
+        BEGIN BRANCH B(31:16)
+            WIRE 1488 1456 1568 1456
+            WIRE 1568 1456 1776 1456
+            BEGIN DISPLAY 1568 1456 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 1392 1232 1488 1232
+        BEGIN BRANCH B(15:0)
+            WIRE 1488 1232 1568 1232
+            WIRE 1568 1232 1776 1232
+            BEGIN DISPLAY 1568 1232 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 1264 1392 1360 1392
+        BEGIN BRANCH A(31:16)
+            WIRE 1360 1392 1568 1392
+            WIRE 1568 1392 1776 1392
+            BEGIN DISPLAY 1568 1392 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 1264 1168 1360 1168
+        BEGIN BRANCH A(15:0)
+            WIRE 1360 1168 1568 1168
+            WIRE 1568 1168 1776 1168
+            BEGIN DISPLAY 1568 1168 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 2320 1424 2224 1424
+        BEGIN BRANCH Y(31:16)
+            WIRE 2032 1424 2128 1424
+            WIRE 2128 1424 2224 1424
+            BEGIN DISPLAY 2128 1424 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 2320 1200 2224 1200
+        BEGIN BRANCH Y(15:0)
+            WIRE 2032 1200 2128 1200
+            WIRE 2128 1200 2224 1200
+            BEGIN DISPLAY 2128 1200 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        IOMARKER 1264 1120 A(31:0) R270 28
+        IOMARKER 1392 1120 B(31:0) R270 28
+        IOMARKER 1696 1792 S R180 28
+        IOMARKER 2320 1168 Y(31:0) R270 28
+        BEGIN INSTANCE XLXI_17 1776 1328 R0
+        END INSTANCE
+        BEGIN INSTANCE XLXI_18 1776 1552 R0
+        END INSTANCE
+    END SHEET
+END SCHEMATIC

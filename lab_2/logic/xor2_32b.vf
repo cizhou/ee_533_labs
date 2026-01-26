@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1
+//  \   \         Application : sch2verilog
+//  /   /         Filename : xor2_32b.vf
+// /___/   /\     Timestamp : 01/24/2026 15:17:34
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\sch2verilog.exe -intstyle ise -family spartan3a -w "C:/Documents and Settings/student/My Documents/logic/xor2_32b.sch" xor2_32b.vf
+//Design Name: xor2_32b
+//Device: spartan3a
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module xor2_32b(A, 
+                B, 
+                C);
+
+    input [31:0] A;
+    input [31:0] B;
+   output [31:0] C;
+   
+   
+   xor2_8b XLXI_1 (.A(A[7:0]), 
+                   .B(B[7:0]), 
+                   .C(C[7:0]));
+   xor2_8b XLXI_2 (.A(A[15:8]), 
+                   .B(B[15:8]), 
+                   .C(C[15:8]));
+   xor2_8b XLXI_3 (.A(A[23:16]), 
+                   .B(B[23:16]), 
+                   .C(C[23:16]));
+   xor2_8b XLXI_4 (.A(A[31:24]), 
+                   .B(B[31:24]), 
+                   .C(C[31:24]));
+endmodule

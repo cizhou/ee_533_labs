@@ -1,0 +1,2 @@
+select figure at 888 1057 14 -branches -sn=1
+select all in 885 1053 2537 2234 -branches -enclosed -noattrwin -sn=1

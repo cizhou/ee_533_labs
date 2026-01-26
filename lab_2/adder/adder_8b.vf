@@ -1,0 +1,47 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1
+//  \   \         Application : sch2verilog
+//  /   /         Filename : adder_8b.vf
+// /___/   /\     Timestamp : 01/25/2026 22:42:19
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\sch2verilog.exe -intstyle ise -family spartan3a -w "C:/Documents and Settings/student/My Documents/adder/adder_8b.sch" adder_8b.vf
+//Design Name: adder_8b
+//Device: spartan3a
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module adder_8b(A, 
+                B, 
+                Cin, 
+                Cout, 
+                S);
+
+    input [7:0] A;
+    input [7:0] B;
+    input Cin;
+   output Cout;
+   output [7:0] S;
+   
+   wire XLXN_9;
+   
+   adder_4b XLXI_1 (.A(A[3:0]), 
+                    .B(B[3:0]), 
+                    .Cin(Cin), 
+                    .Cout(XLXN_9), 
+                    .S(S[3:0]));
+   adder_4b XLXI_2 (.A(A[7:4]), 
+                    .B(B[7:4]), 
+                    .Cin(XLXN_9), 
+                    .Cout(Cout), 
+                    .S(S[7:4]));
+endmodule

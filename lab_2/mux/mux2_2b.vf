@@ -1,0 +1,42 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1
+//  \   \         Application : sch2verilog
+//  /   /         Filename : mux2_2b.vf
+// /___/   /\     Timestamp : 01/24/2026 14:35:47
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\sch2verilog.exe -intstyle ise -family spartan3a -w "C:/Documents and Settings/student/My Documents/mux/mux2_2b.sch" mux2_2b.vf
+//Design Name: mux2_2b
+//Device: spartan3a
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module mux2_2b(A, 
+               B, 
+               S, 
+               Y);
+
+    input [1:0] A;
+    input [1:0] B;
+    input S;
+   output [1:0] Y;
+   
+   
+   mux2_1b XLXI_3 (.A(A[1]), 
+                   .B(B[1]), 
+                   .S(S), 
+                   .Y(Y[1]));
+   mux2_1b XLXI_4 (.A(A[0]), 
+                   .B(B[0]), 
+                   .S(S), 
+                   .Y(Y[0]));
+endmodule

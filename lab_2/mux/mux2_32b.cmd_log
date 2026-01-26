@@ -1,0 +1,1 @@
+sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/mux/mux2_32b.sch" mux2_32b.vf

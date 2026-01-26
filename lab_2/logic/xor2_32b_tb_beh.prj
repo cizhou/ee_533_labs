@@ -1,0 +1,4 @@
+verilog work "xor2_8b.vf"
+verilog work "xor2_32b.vf"
+verilog work "xor2_32_tb.v"
+verilog work "C:/Xilinx/10.1/ISE/verilog/src/glbl.v"

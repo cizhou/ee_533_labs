@@ -1,0 +1,4 @@
+sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/adder/mux2_1b.sch" mux2_1b.vf
+sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/adder/mux2_1b.sch" mux2_1b.vf
+sch2verilog -intstyle ise -family spartan3a -tionly   -tiext tfi -w "C:/Documents and Settings/student/My Documents/adder/mux2_1b.sch" mux2_1b.tfi
+sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/mux/mux2_1b.sch" mux2_1b.vf

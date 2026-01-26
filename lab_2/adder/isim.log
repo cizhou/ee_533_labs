@@ -1,0 +1,40 @@
+Command line:
+   ./adder_32b_tb_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  1392
+
+Sun Jan 25 22:44:07 2026
+
+Total Line Count : 42
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 142.471 Meg
+
+ Total Signals          : 1002
+ Total Nets             : 265
+ Total Signal Drivers   : 198
+ Total Blocks           : 240
+ Total Primitive Blocks : 194
+ Total Processes        : 201
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 474
+ntrace select -o on -n /adder_32b_tb/A 
+ntrace select -o on -n /adder_32b_tb/B 
+ntrace select -o on -n /adder_32b_tb/Cin 
+ntrace select -o on -n /adder_32b_tb/expected 
+ntrace select -o on -n /adder_32b_tb/S 
+ntrace select -o on -n /adder_32b_tb/Cout 
+ntrace select -o on -n /adder_32b_tb/i 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 151.974 Meg
+
+Sun Jan 25 22:44:33 2026
+

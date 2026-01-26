@@ -1,0 +1,4 @@
+verilog isim_temp "xor2_8b.vf"
+verilog isim_temp "xor2_32b.vf"
+verilog isim_temp "xor2_32_tb.v"
+verilog isim_temp "C:/Xilinx/10.1/ISE/verilog/src/glbl.v"

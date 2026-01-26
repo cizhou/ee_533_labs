@@ -1,0 +1,3 @@
+sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/adder/alu_32b_4func.sch" alu_32b_4func.vf
+sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/adder/alu_32b_4func.sch" alu_32b_4func.vf
+sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/adder/alu_32b_4func.sch" alu_32b_4func.vf

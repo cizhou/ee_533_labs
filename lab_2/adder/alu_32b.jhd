@@ -1,0 +1,3 @@
+MODULE alu_32b
+	SUBMODULE adder_32b
+		INSTANCE XLXI_2

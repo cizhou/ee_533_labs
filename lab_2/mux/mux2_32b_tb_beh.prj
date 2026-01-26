@@ -1,0 +1,8 @@
+verilog work "mux2_1b.vf"
+verilog work "mux2_2b.vf"
+verilog work "mux2_4b.vf"
+verilog work "mux2_8b.vf"
+verilog work "mux2_16b.vf"
+verilog work "mux2_32b.vf"
+verilog work "mux2_32b_tb.v"
+verilog work "C:/Xilinx/10.1/ISE/verilog/src/glbl.v"

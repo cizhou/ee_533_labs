@@ -1,0 +1,59 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1
+//  \   \         Application : sch2verilog
+//  /   /         Filename : adder_32b.vf
+// /___/   /\     Timestamp : 01/25/2026 22:42:20
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\sch2verilog.exe -intstyle ise -family spartan3a -w "C:/Documents and Settings/student/My Documents/adder/adder_32b.sch" adder_32b.vf
+//Design Name: adder_32b
+//Device: spartan3a
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module adder_32b(A, 
+                 B, 
+                 Cin, 
+                 Cout, 
+                 S);
+
+    input [31:0] A;
+    input [31:0] B;
+    input Cin;
+   output Cout;
+   output [31:0] S;
+   
+   wire XLXN_19;
+   wire XLXN_20;
+   wire XLXN_21;
+   
+   adder_8b XLXI_1 (.A(A[31:24]), 
+                    .B(B[31:24]), 
+                    .Cin(XLXN_21), 
+                    .Cout(Cout), 
+                    .S(S[31:24]));
+   adder_8b XLXI_2 (.A(A[23:16]), 
+                    .B(B[23:16]), 
+                    .Cin(XLXN_20), 
+                    .Cout(XLXN_21), 
+                    .S(S[23:16]));
+   adder_8b XLXI_3 (.A(A[15:8]), 
+                    .B(B[15:8]), 
+                    .Cin(XLXN_19), 
+                    .Cout(XLXN_20), 
+                    .S(S[15:8]));
+   adder_8b XLXI_4 (.A(A[7:0]), 
+                    .B(B[7:0]), 
+                    .Cin(Cin), 
+                    .Cout(XLXN_19), 
+                    .S(S[7:0]));
+endmodule

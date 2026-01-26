@@ -1,0 +1,8 @@
+verilog isim_temp "mux2_1b.vf"
+verilog isim_temp "mux2_2b.vf"
+verilog isim_temp "mux2_4b.vf"
+verilog isim_temp "mux2_8b.vf"
+verilog isim_temp "mux2_16b.vf"
+verilog isim_temp "mux2_32b.vf"
+verilog isim_temp "mux2_32b_tb.v"
+verilog isim_temp "C:/Xilinx/10.1/ISE/verilog/src/glbl.v"

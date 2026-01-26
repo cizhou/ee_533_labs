@@ -1,0 +1,59 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1
+//  \   \         Application : sch2verilog
+//  /   /         Filename : adder_1b.vf
+// /___/   /\     Timestamp : 01/25/2026 22:42:18
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\sch2verilog.exe -intstyle ise -family spartan3a -w "C:/Documents and Settings/student/My Documents/adder/adder_1b.sch" adder_1b.vf
+//Design Name: adder_1b
+//Device: spartan3a
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module adder_1b(A, 
+                B, 
+                Cin, 
+                Cout, 
+                S);
+
+    input A;
+    input B;
+    input Cin;
+   output Cout;
+   output S;
+   
+   wire XLXN_18;
+   wire XLXN_47;
+   wire XLXN_48;
+   wire XLXN_49;
+   
+   XOR2 XLXI_3 (.I0(B), 
+                .I1(A), 
+                .O(XLXN_18));
+   XOR2 XLXI_4 (.I0(Cin), 
+                .I1(XLXN_18), 
+                .O(S));
+   AND2 XLXI_5 (.I0(B), 
+                .I1(A), 
+                .O(XLXN_47));
+   AND2 XLXI_6 (.I0(Cin), 
+                .I1(A), 
+                .O(XLXN_48));
+   AND2 XLXI_7 (.I0(Cin), 
+                .I1(B), 
+                .O(XLXN_49));
+   OR3 XLXI_11 (.I0(XLXN_49), 
+                .I1(XLXN_48), 
+                .I2(XLXN_47), 
+                .O(Cout));
+endmodule
