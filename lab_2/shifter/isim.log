@@ -1,0 +1,36 @@
+Command line:
+   ./rightshifter_32b_tb_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  1045
+
+Mon Jan 26 13:58:34 2026
+
+Total Line Count : 35
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 141.418 Meg
+
+ Total Signals          : 78
+ Total Nets             : 73
+ Total Signal Drivers   : 37
+ Total Blocks           : 37
+ Total Primitive Blocks : 35
+ Total Processes        : 40
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 216
+ntrace select -o on -n /rightshifter_32b_tb/Y 
+ntrace select -o on -n /rightshifter_32b_tb/Cout 
+ntrace select -o on -n /rightshifter_32b_tb/X 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 150.921 Meg
+
+Mon Jan 26 13:59:06 2026
+

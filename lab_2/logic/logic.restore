@@ -836,6 +836,10 @@ proc restore { { project_dir "" } } {
   } "A problem occured while restoring project settings."
 
   set user_files { 
+      "and2_32b.sch" 
+      "and2_8b.sch" 
+      "or2_32b.sch" 
+      "or2_8b.sch" 
       "xor2_32_tb.v" 
       "xor2_32b.sch" 
       "xor2_8b.sch"}

@@ -1,0 +1,5 @@
+sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/temp/leftshifter_32b.sch" leftshifter_32b.vf
+sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/shifter/leftshifter_32b.sch" leftshifter_32b.vf
+sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/temp/leftshifter_32b.sch" leftshifter_32b.vf
+sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/shifter/leftshifter_32b.sch" leftshifter_32b.vf
+sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/shifter/leftshifter_32b.sch" leftshifter_32b.vf

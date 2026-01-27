@@ -1,0 +1,190 @@
+VERSION 6
+BEGIN SCHEMATIC
+    BEGIN ATTR DeviceFamilyName "spartan3a"
+        DELETE all:0
+        EDITNAME all:0
+        EDITTRAIT all:0
+    END ATTR
+    BEGIN NETLIST
+        SIGNAL B(31:0)
+        SIGNAL A(31:0)
+        SIGNAL A(7:0)
+        SIGNAL A(15:8)
+        SIGNAL A(23:16)
+        SIGNAL A(31:24)
+        SIGNAL B(7:0)
+        SIGNAL B(15:8)
+        SIGNAL B(23:16)
+        SIGNAL B(31:24)
+        SIGNAL S(31:0)
+        SIGNAL S(31:24)
+        SIGNAL S(23:16)
+        SIGNAL S(15:8)
+        SIGNAL S(7:0)
+        PORT Input B(31:0)
+        PORT Input A(31:0)
+        PORT Output S(31:0)
+        BEGIN BLOCKDEF and2_8b
+            TIMESTAMP 2026 1 27 0 4 55
+            RECTANGLE N 64 -128 320 0 
+            LINE N 64 -96 0 -96 
+            RECTANGLE N 0 -108 64 -84 
+            LINE N 64 -32 0 -32 
+            RECTANGLE N 0 -44 64 -20 
+            LINE N 320 -96 384 -96 
+            RECTANGLE N 320 -108 384 -84 
+        END BLOCKDEF
+        BEGIN BLOCK XLXI_6 and2_8b
+            PIN A(7:0) A(7:0)
+            PIN B(7:0) B(7:0)
+            PIN S(7:0) S(7:0)
+        END BLOCK
+        BEGIN BLOCK XLXI_7 and2_8b
+            PIN A(7:0) A(15:8)
+            PIN B(7:0) B(15:8)
+            PIN S(7:0) S(15:8)
+        END BLOCK
+        BEGIN BLOCK XLXI_8 and2_8b
+            PIN A(7:0) A(23:16)
+            PIN B(7:0) B(23:16)
+            PIN S(7:0) S(23:16)
+        END BLOCK
+        BEGIN BLOCK XLXI_9 and2_8b
+            PIN A(7:0) A(31:24)
+            PIN B(7:0) B(31:24)
+            PIN S(7:0) S(31:24)
+        END BLOCK
+    END NETLIST
+    BEGIN SHEET 1 3520 2720
+        BEGIN BRANCH B(31:0)
+            WIRE 1216 960 1216 1088
+            WIRE 1216 1088 1216 1264
+            WIRE 1216 1264 1216 1440
+            WIRE 1216 1440 1216 1632
+            WIRE 1216 1632 1216 1776
+        END BRANCH
+        BEGIN BRANCH A(31:0)
+            WIRE 1136 960 1136 1024
+            WIRE 1136 1024 1136 1088
+            WIRE 1136 1088 1136 1200
+            WIRE 1136 1200 1136 1360
+            WIRE 1136 1360 1136 1376
+            WIRE 1136 1376 1136 1568
+            WIRE 1136 1568 1136 1776
+        END BRANCH
+        BUSTAP 1136 1024 1232 1024
+        BEGIN BRANCH A(7:0)
+            WIRE 1232 1024 1456 1024
+            WIRE 1456 1024 1680 1024
+            BEGIN DISPLAY 1456 1024 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 1136 1200 1232 1200
+        BEGIN BRANCH A(15:8)
+            WIRE 1232 1200 1456 1200
+            WIRE 1456 1200 1680 1200
+            BEGIN DISPLAY 1456 1200 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 1136 1376 1232 1376
+        BEGIN BRANCH A(23:16)
+            WIRE 1232 1376 1456 1376
+            WIRE 1456 1376 1680 1376
+            BEGIN DISPLAY 1456 1376 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 1136 1568 1232 1568
+        BEGIN BRANCH A(31:24)
+            WIRE 1232 1568 1456 1568
+            WIRE 1456 1568 1680 1568
+            BEGIN DISPLAY 1456 1568 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 1216 1088 1312 1088
+        BEGIN BRANCH B(7:0)
+            WIRE 1312 1088 1488 1088
+            WIRE 1488 1088 1680 1088
+            BEGIN DISPLAY 1496 1088 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 1216 1264 1312 1264
+        BEGIN BRANCH B(15:8)
+            WIRE 1312 1264 1488 1264
+            WIRE 1488 1264 1680 1264
+            BEGIN DISPLAY 1496 1264 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 1216 1440 1312 1440
+        BEGIN BRANCH B(23:16)
+            WIRE 1312 1440 1488 1440
+            WIRE 1488 1440 1680 1440
+            BEGIN DISPLAY 1496 1440 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 1216 1632 1312 1632
+        BEGIN BRANCH B(31:24)
+            WIRE 1312 1632 1488 1632
+            WIRE 1488 1632 1680 1632
+            BEGIN DISPLAY 1496 1632 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH S(31:0)
+            WIRE 2288 960 2288 1024
+            WIRE 2288 1024 2288 1200
+            WIRE 2288 1200 2288 1376
+            WIRE 2288 1376 2288 1568
+            WIRE 2288 1568 2288 1712
+        END BRANCH
+        BUSTAP 2288 1568 2192 1568
+        BEGIN BRANCH S(31:24)
+            WIRE 2064 1568 2128 1568
+            WIRE 2128 1568 2192 1568
+            BEGIN DISPLAY 2128 1568 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 2288 1376 2192 1376
+        BEGIN BRANCH S(23:16)
+            WIRE 2064 1376 2128 1376
+            WIRE 2128 1376 2192 1376
+            BEGIN DISPLAY 2128 1376 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 2288 1200 2192 1200
+        BEGIN BRANCH S(15:8)
+            WIRE 2064 1200 2128 1200
+            WIRE 2128 1200 2192 1200
+            BEGIN DISPLAY 2128 1200 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 2288 1024 2192 1024
+        BEGIN BRANCH S(7:0)
+            WIRE 2064 1024 2128 1024
+            WIRE 2128 1024 2192 1024
+            BEGIN DISPLAY 2128 1024 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        IOMARKER 1216 960 B(31:0) R270 28
+        IOMARKER 1136 960 A(31:0) R270 28
+        IOMARKER 2288 960 S(31:0) R270 28
+        BEGIN INSTANCE XLXI_6 1680 1120 R0
+        END INSTANCE
+        BEGIN INSTANCE XLXI_7 1680 1296 R0
+        END INSTANCE
+        BEGIN INSTANCE XLXI_8 1680 1472 R0
+        END INSTANCE
+        BEGIN INSTANCE XLXI_9 1680 1664 R0
+        END INSTANCE
+    END SHEET
+END SCHEMATIC

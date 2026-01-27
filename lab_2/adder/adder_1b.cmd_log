@@ -2,3 +2,4 @@ sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/stud
 sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/adder/adder_1b.sch" adder_1b.vf
 sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/adder/adder_1b.sch" adder_1b.vf
 sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/adder/adder_1b.sch" adder_1b.vf
+sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/adder/adder_1b.sch" adder_1b.vf

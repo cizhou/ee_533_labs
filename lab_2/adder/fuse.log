@@ -26,7 +26,7 @@ Restoring Verilog parse-tree unisims_ver.OR3 from
 c:/xilinx/10.1/ise/verilog/hdp/nt/unisims_ver/unisims_ver.sdbl
 Completed static elaboration
 Fuse Memory Usage: 54152 Kb
-Fuse CPU Usage: 280 ms
+Fuse CPU Usage: 156 ms
 Compiling module glbl
 Compiling module XOR2
 Compiling module AND2
@@ -39,4 +39,4 @@ Compiling module adder_32b_tb
 Compiled 9 Verilog Units
 Built simulation executable adder_32b_tb_isim_beh.exe
 Fuse Memory Usage: 55436 Kb
-Fuse CPU Usage: 327 ms
+Fuse CPU Usage: 202 ms

@@ -1,0 +1,2 @@
+sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/logic/or2_8b.sch" or2_8b.vf
+sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/temp/or2_8b.sch" or2_8b.vf

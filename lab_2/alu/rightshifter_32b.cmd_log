@@ -1,0 +1,1 @@
+sch2verilog -intstyle ise -family spartan3a   -w "C:/Documents and Settings/student/My Documents/alu/rightshifter_32b.sch" rightshifter_32b.vf

@@ -1,0 +1,190 @@
+VERSION 6
+BEGIN SCHEMATIC
+    BEGIN ATTR DeviceFamilyName "spartan3a"
+        DELETE all:0
+        EDITNAME all:0
+        EDITTRAIT all:0
+    END ATTR
+    BEGIN NETLIST
+        SIGNAL B(31:0)
+        SIGNAL A(31:0)
+        SIGNAL A(7:0)
+        SIGNAL A(15:8)
+        SIGNAL A(23:16)
+        SIGNAL A(31:24)
+        SIGNAL B(7:0)
+        SIGNAL B(15:8)
+        SIGNAL B(23:16)
+        SIGNAL B(31:24)
+        SIGNAL S(31:0)
+        SIGNAL S(31:24)
+        SIGNAL S(23:16)
+        SIGNAL S(15:8)
+        SIGNAL S(7:0)
+        PORT Input B(31:0)
+        PORT Input A(31:0)
+        PORT Output S(31:0)
+        BEGIN BLOCKDEF or2_8b
+            TIMESTAMP 2026 1 27 0 5 28
+            RECTANGLE N 64 -128 320 0 
+            LINE N 64 -96 0 -96 
+            RECTANGLE N 0 -108 64 -84 
+            LINE N 64 -32 0 -32 
+            RECTANGLE N 0 -44 64 -20 
+            LINE N 320 -96 384 -96 
+            RECTANGLE N 320 -108 384 -84 
+        END BLOCKDEF
+        BEGIN BLOCK XLXI_2 or2_8b
+            PIN A(7:0) A(7:0)
+            PIN B(7:0) B(7:0)
+            PIN S(7:0) S(7:0)
+        END BLOCK
+        BEGIN BLOCK XLXI_3 or2_8b
+            PIN A(7:0) A(15:8)
+            PIN B(7:0) B(15:8)
+            PIN S(7:0) S(15:8)
+        END BLOCK
+        BEGIN BLOCK XLXI_4 or2_8b
+            PIN A(7:0) A(23:16)
+            PIN B(7:0) B(23:16)
+            PIN S(7:0) S(23:16)
+        END BLOCK
+        BEGIN BLOCK XLXI_5 or2_8b
+            PIN A(7:0) A(31:24)
+            PIN B(7:0) B(31:24)
+            PIN S(7:0) S(31:24)
+        END BLOCK
+    END NETLIST
+    BEGIN SHEET 1 3520 2720
+        BEGIN INSTANCE XLXI_2 1376 896 R0
+        END INSTANCE
+        BEGIN INSTANCE XLXI_3 1376 1072 R0
+        END INSTANCE
+        BEGIN INSTANCE XLXI_4 1376 1248 R0
+        END INSTANCE
+        BEGIN INSTANCE XLXI_5 1376 1440 R0
+        END INSTANCE
+        BEGIN BRANCH B(31:0)
+            WIRE 912 736 912 864
+            WIRE 912 864 912 1040
+            WIRE 912 1040 912 1216
+            WIRE 912 1216 912 1408
+            WIRE 912 1408 912 1552
+        END BRANCH
+        BEGIN BRANCH A(31:0)
+            WIRE 832 736 832 800
+            WIRE 832 800 832 864
+            WIRE 832 864 832 976
+            WIRE 832 976 832 1136
+            WIRE 832 1136 832 1152
+            WIRE 832 1152 832 1344
+            WIRE 832 1344 832 1552
+        END BRANCH
+        IOMARKER 912 736 B(31:0) R270 28
+        IOMARKER 832 736 A(31:0) R270 28
+        BUSTAP 832 800 928 800
+        BEGIN BRANCH A(7:0)
+            WIRE 928 800 1152 800
+            WIRE 1152 800 1376 800
+            BEGIN DISPLAY 1152 800 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 832 976 928 976
+        BEGIN BRANCH A(15:8)
+            WIRE 928 976 1152 976
+            WIRE 1152 976 1376 976
+            BEGIN DISPLAY 1152 976 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 832 1152 928 1152
+        BEGIN BRANCH A(23:16)
+            WIRE 928 1152 1152 1152
+            WIRE 1152 1152 1376 1152
+            BEGIN DISPLAY 1152 1152 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 832 1344 928 1344
+        BEGIN BRANCH A(31:24)
+            WIRE 928 1344 1152 1344
+            WIRE 1152 1344 1376 1344
+            BEGIN DISPLAY 1152 1344 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 912 864 1008 864
+        BEGIN BRANCH B(7:0)
+            WIRE 1008 864 1184 864
+            WIRE 1184 864 1376 864
+            BEGIN DISPLAY 1192 864 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 912 1040 1008 1040
+        BEGIN BRANCH B(15:8)
+            WIRE 1008 1040 1184 1040
+            WIRE 1184 1040 1376 1040
+            BEGIN DISPLAY 1192 1040 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 912 1216 1008 1216
+        BEGIN BRANCH B(23:16)
+            WIRE 1008 1216 1184 1216
+            WIRE 1184 1216 1376 1216
+            BEGIN DISPLAY 1192 1216 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 912 1408 1008 1408
+        BEGIN BRANCH B(31:24)
+            WIRE 1008 1408 1184 1408
+            WIRE 1184 1408 1376 1408
+            BEGIN DISPLAY 1192 1408 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH S(31:0)
+            WIRE 1984 736 1984 800
+            WIRE 1984 800 1984 976
+            WIRE 1984 976 1984 1152
+            WIRE 1984 1152 1984 1344
+            WIRE 1984 1344 1984 1488
+        END BRANCH
+        IOMARKER 1984 736 S(31:0) R270 28
+        BUSTAP 1984 1344 1888 1344
+        BEGIN BRANCH S(31:24)
+            WIRE 1760 1344 1824 1344
+            WIRE 1824 1344 1888 1344
+            BEGIN DISPLAY 1824 1344 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 1984 1152 1888 1152
+        BEGIN BRANCH S(23:16)
+            WIRE 1760 1152 1824 1152
+            WIRE 1824 1152 1888 1152
+            BEGIN DISPLAY 1824 1152 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 1984 976 1888 976
+        BEGIN BRANCH S(15:8)
+            WIRE 1760 976 1824 976
+            WIRE 1824 976 1888 976
+            BEGIN DISPLAY 1824 976 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 1984 800 1888 800
+        BEGIN BRANCH S(7:0)
+            WIRE 1760 800 1824 800
+            WIRE 1824 800 1888 800
+            BEGIN DISPLAY 1824 800 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+    END SHEET
+END SCHEMATIC

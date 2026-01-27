@@ -1,0 +1,94 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1
+//  \   \         Application : sch2verilog
+//  /   /         Filename : fan32.vf
+// /___/   /\     Timestamp : 01/26/2026 15:15:22
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\sch2verilog.exe -intstyle ise -family spartan3a -w "C:/Documents and Settings/student/My Documents/fan/fan32.sch" fan32.vf
+//Design Name: fan32
+//Device: spartan3a
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module fan32(X, 
+             Y);
+
+    input X;
+   output [31:0] Y;
+   
+   
+   BUF XLXI_1 (.I(X), 
+               .O(Y[6]));
+   BUF XLXI_2 (.I(X), 
+               .O(Y[7]));
+   BUF XLXI_3 (.I(X), 
+               .O(Y[4]));
+   BUF XLXI_4 (.I(X), 
+               .O(Y[5]));
+   BUF XLXI_5 (.I(X), 
+               .O(Y[2]));
+   BUF XLXI_6 (.I(X), 
+               .O(Y[3]));
+   BUF XLXI_7 (.I(X), 
+               .O(Y[0]));
+   BUF XLXI_8 (.I(X), 
+               .O(Y[1]));
+   BUF XLXI_9 (.I(X), 
+               .O(Y[14]));
+   BUF XLXI_10 (.I(X), 
+                .O(Y[15]));
+   BUF XLXI_11 (.I(X), 
+                .O(Y[12]));
+   BUF XLXI_12 (.I(X), 
+                .O(Y[13]));
+   BUF XLXI_13 (.I(X), 
+                .O(Y[10]));
+   BUF XLXI_14 (.I(X), 
+                .O(Y[11]));
+   BUF XLXI_15 (.I(X), 
+                .O(Y[8]));
+   BUF XLXI_16 (.I(X), 
+                .O(Y[9]));
+   BUF XLXI_17 (.I(X), 
+                .O(Y[22]));
+   BUF XLXI_18 (.I(X), 
+                .O(Y[23]));
+   BUF XLXI_19 (.I(X), 
+                .O(Y[20]));
+   BUF XLXI_20 (.I(X), 
+                .O(Y[21]));
+   BUF XLXI_21 (.I(X), 
+                .O(Y[18]));
+   BUF XLXI_22 (.I(X), 
+                .O(Y[19]));
+   BUF XLXI_23 (.I(X), 
+                .O(Y[16]));
+   BUF XLXI_24 (.I(X), 
+                .O(Y[17]));
+   BUF XLXI_25 (.I(X), 
+                .O(Y[30]));
+   BUF XLXI_26 (.I(X), 
+                .O(Y[31]));
+   BUF XLXI_27 (.I(X), 
+                .O(Y[28]));
+   BUF XLXI_28 (.I(X), 
+                .O(Y[29]));
+   BUF XLXI_29 (.I(X), 
+                .O(Y[26]));
+   BUF XLXI_30 (.I(X), 
+                .O(Y[27]));
+   BUF XLXI_31 (.I(X), 
+                .O(Y[24]));
+   BUF XLXI_32 (.I(X), 
+                .O(Y[25]));
+endmodule

@@ -1,0 +1,31 @@
+Command line:
+   ./tb_alu_32b_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  1081
+
+Mon Jan 26 17:35:07 2026
+
+Total Line Count : 52
+
+ Elaboration Time: 0 sec
+
+ Current Memory Usage: 141.418 Meg
+
+ Total Signals          : 16
+ Total Nets             : 141
+ Total Signal Drivers   : 9
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 13
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 319
+ntrace select -o on -n /tb_alu_32b/M 
+ntrace select -o on -n /tb_alu_32b/A 
+ntrace select -o on -n /tb_alu_32b/B 
+ntrace select -o on -n /tb_alu_32b/S 
+ntrace select -o on -n /tb_alu_32b/Cout 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

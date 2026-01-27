@@ -1,0 +1,6 @@
+CommandLine
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\xst.exe -ise C:/Documents and Settings/student/My Documents/verilog_alu/verilog_alu.ise -intstyle ise -ifn C:/Documents and Settings/student/My Documents/verilog_alu/alu_32b.xst -ofn C:/Documents and Settings/student/My Documents/verilog_alu/alu_32b.syr -finalclean 1
+s
+FormatString
+xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
+s

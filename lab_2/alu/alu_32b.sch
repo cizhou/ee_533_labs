@@ -6,37 +6,23 @@ BEGIN SCHEMATIC
         EDITTRAIT all:0
     END ATTR
     BEGIN NETLIST
-        SIGNAL XLXN_11(15:0)
-        SIGNAL XLXN_12(15:0)
-        SIGNAL XLXN_13(7:0)
-        SIGNAL XLXN_14(15:0)
         SIGNAL A(31:0)
         SIGNAL B(31:0)
-        SIGNAL XLXN_44(31:0)
-        SIGNAL XLXN_63(31:0)
-        SIGNAL XLXN_65(31:0)
         SIGNAL XLXN_5(7:0)
         SIGNAL S(31:0)
         SIGNAL XLXN_10(15:0)
         SIGNAL M(1)
-        SIGNAL XLXN_76
         SIGNAL M(2)
         SIGNAL XLXN_27(7:0)
         SIGNAL XLXN_29(15:0)
         SIGNAL XLXN_15(15:0)
         SIGNAL XLXN_16(15:0)
-        SIGNAL XLXN_87(31:0)
         SIGNAL M(0)
-        SIGNAL XLXN_89(31:0)
-        SIGNAL XLXN_95(0)
-        SIGNAL XLXN_95(31:0)
-        SIGNAL B(30:0)
         SIGNAL XLXN_103
-        SIGNAL C(2)
         SIGNAL XLXN_109
-        SIGNAL C(0)
-        SIGNAL C(1)
         SIGNAL M(2:0)
+        SIGNAL XLXN_110(31:0)
+        SIGNAL XLXN_111(31:0)
         PORT Input A(31:0)
         PORT Input B(31:0)
         PORT Output S(31:0)
@@ -51,37 +37,6 @@ BEGIN SCHEMATIC
             LINE N 128 -64 128 0 
             LINE N 192 -128 256 -128 
             RECTANGLE N 192 -140 256 -116 
-        END BLOCKDEF
-        BEGIN BLOCKDEF xor2_32b
-            TIMESTAMP 2026 1 24 23 52 7
-            RECTANGLE N 64 -128 320 0 
-            LINE N 64 -96 0 -96 
-            RECTANGLE N 0 -108 64 -84 
-            LINE N 64 -32 0 -32 
-            RECTANGLE N 0 -44 64 -20 
-            LINE N 320 -96 384 -96 
-            RECTANGLE N 320 -108 384 -84 
-        END BLOCKDEF
-        BEGIN BLOCKDEF adder_32b
-            TIMESTAMP 2026 1 24 23 51 2
-            RECTANGLE N 64 -192 320 0 
-            LINE N 64 -32 0 -32 
-            LINE N 64 -160 0 -160 
-            RECTANGLE N 0 -172 64 -148 
-            LINE N 64 -96 0 -96 
-            RECTANGLE N 0 -108 64 -84 
-            LINE N 320 -160 384 -160 
-            LINE N 320 -96 384 -96 
-            RECTANGLE N 320 -108 384 -84 
-        END BLOCKDEF
-        BEGIN BLOCKDEF gnd
-            TIMESTAMP 2000 1 1 10 10 10
-            LINE N 64 -64 64 -96 
-            LINE N 76 -48 52 -48 
-            LINE N 68 -32 60 -32 
-            LINE N 88 -64 40 -64 
-            LINE N 64 -64 64 -80 
-            LINE N 64 -128 64 -96 
         END BLOCKDEF
         BEGIN BLOCKDEF xor2
             TIMESTAMP 2000 1 1 10 10 10
@@ -106,29 +61,45 @@ BEGIN SCHEMATIC
             LINE N 0 -64 40 -64 
             CIRCLE N 40 -76 64 -52 
         END BLOCKDEF
+        BEGIN BLOCKDEF rightshifter_32b
+            TIMESTAMP 2026 1 26 22 4 30
+            RECTANGLE N 0 -192 128 -64 
+            LINE N 32 -64 32 0 
+            LINE N 96 -64 96 0 
+            RECTANGLE N 84 -64 108 0 
+            LINE N 64 -192 64 -256 
+            RECTANGLE N 52 -256 76 -192 
+        END BLOCKDEF
+        BEGIN BLOCKDEF leftshifter_32b
+            TIMESTAMP 2026 1 26 22 3 35
+            RECTANGLE N 0 -192 128 -64 
+            LINE N 32 -64 32 0 
+            LINE N 96 -64 96 0 
+            RECTANGLE N 84 -64 108 0 
+            LINE N 64 -192 64 -256 
+            RECTANGLE N 52 -256 76 -192 
+        END BLOCKDEF
+        BEGIN BLOCKDEF xor2_32b
+            TIMESTAMP 2026 1 24 23 52 7
+            RECTANGLE N 64 -128 320 0 
+            LINE N 64 -96 0 -96 
+            RECTANGLE N 0 -108 64 -84 
+            LINE N 64 -32 0 -32 
+            RECTANGLE N 0 -44 64 -20 
+            LINE N 320 -96 384 -96 
+            RECTANGLE N 320 -108 384 -84 
+        END BLOCKDEF
         BEGIN BLOCK XLXI_19 mux2_32b
             PIN A(31:0) XLXN_5(7:0)
             PIN B(31:0) XLXN_10(15:0)
             PIN S M(2)
             PIN Y(31:0) S(31:0)
         END BLOCK
-        BEGIN BLOCK XLXI_24 adder_32b
-            PIN Cin XLXN_109
-            PIN A(7:0) A(31:0)
-            PIN B(31:0) XLXN_27(7:0)
-            PIN Cout
-            PIN S(31:0) XLXN_5(7:0)
-        END BLOCK
         BEGIN BLOCK XLXI_15 mux2_32b
             PIN A(31:0) XLXN_29(15:0)
             PIN B(31:0) M(0)
             PIN S M(1)
             PIN Y(31:0) XLXN_27(7:0)
-        END BLOCK
-        BEGIN BLOCK XLXI_23 xor2_32b
-            PIN A(31:0)
-            PIN B(31:0) B(31:0)
-            PIN C(31:0) XLXN_29(15:0)
         END BLOCK
         BEGIN BLOCK XLXI_16 mux2_32b
             PIN A(31:0) XLXN_15(15:0)
@@ -143,23 +114,35 @@ BEGIN SCHEMATIC
             PIN Y(31:0) XLXN_16(15:0)
         END BLOCK
         BEGIN BLOCK XLXI_17 mux2_32b
-            PIN A(31:0) XLXN_95(31:0)
-            PIN B(31:0)
+            PIN A(31:0) XLXN_110(31:0)
+            PIN B(31:0) XLXN_111(31:0)
             PIN S M(0)
             PIN Y(31:0) XLXN_15(15:0)
         END BLOCK
-        BEGIN BLOCK XLXI_46 gnd
-            PIN G XLXN_95(0)
-        END BLOCK
         BEGIN BLOCK XLXI_49 xor2
-            PIN I0 C(1)
-            PIN I1 C(0)
+            PIN I0 M(1)
+            PIN I1 M(0)
             PIN O XLXN_103
         END BLOCK
         BEGIN BLOCK XLXI_52 and2b1
-            PIN I0 C(2)
+            PIN I0 M(2)
             PIN I1 XLXN_103
             PIN O XLXN_109
+        END BLOCK
+        BEGIN BLOCK XLXI_53 rightshifter_32b
+            PIN Cout
+            PIN Y(31:0) XLXN_111(31:0)
+            PIN X(31:0) A(31:0)
+        END BLOCK
+        BEGIN BLOCK XLXI_54 leftshifter_32b
+            PIN Cout
+            PIN Y(31:0) XLXN_110(31:0)
+            PIN X(31:0) A(31:0)
+        END BLOCK
+        BEGIN BLOCK XLXI_55 xor2_32b
+            PIN A(31:0)
+            PIN B(31:0) B(31:0)
+            PIN C(31:0) XLXN_29(15:0)
         END BLOCK
     END NETLIST
     BEGIN SHEET 1 2720 1760
@@ -184,23 +167,12 @@ BEGIN SCHEMATIC
                 ALIGNMENT SOFT-VLEFT
             END DISPLAY
         END BRANCH
-        BEGIN BRANCH M(1)
-            WIRE 1200 672 1216 672
-            WIRE 1216 624 1216 672
-            WIRE 1216 624 1248 624
-            WIRE 1248 624 1280 624
-            BEGIN DISPLAY 1248 624 ATTR Name
-                ALIGNMENT SOFT-BCENTER
-            END DISPLAY
-        END BRANCH
         BEGIN BRANCH M(2)
             WIRE 1536 1424 1632 1424
             BEGIN DISPLAY 1632 1424 ATTR Name
                 ALIGNMENT SOFT-LEFT
             END DISPLAY
         END BRANCH
-        BEGIN INSTANCE XLXI_24 976 864 M90
-        END INSTANCE
         BEGIN BRANCH XLXN_27(7:0)
             WIRE 880 816 1072 816
             WIRE 880 816 880 864
@@ -210,8 +182,6 @@ BEGIN SCHEMATIC
             WIRE 1040 512 1040 544
         END BRANCH
         BEGIN INSTANCE XLXI_15 1200 544 M90
-        END INSTANCE
-        BEGIN INSTANCE XLXI_23 944 128 R90
         END INSTANCE
         BEGIN BRANCH B(31:0)
             WIRE 976 64 976 96
@@ -251,28 +221,6 @@ BEGIN SCHEMATIC
                 ALIGNMENT SOFT-BCENTER
             END DISPLAY
         END BRANCH
-        INSTANCE XLXI_46 1472 480 R90
-        BEGIN BRANCH XLXN_95(0)
-            WIRE 1600 544 1632 544
-            WIRE 1632 544 1680 544
-            BEGIN DISPLAY 1640 544 ATTR Name
-                ALIGNMENT SOFT-BCENTER
-            END DISPLAY
-        END BRANCH
-        BEGIN BRANCH XLXN_95(31:0)
-            WIRE 1776 352 1776 432
-            WIRE 1776 432 1776 544
-            WIRE 1776 544 1776 672
-        END BRANCH
-        BUSTAP 1776 544 1680 544
-        BUSTAP 1776 432 1680 432
-        BEGIN BRANCH B(30:0)
-            WIRE 1504 432 1552 432
-            WIRE 1552 432 1680 432
-            BEGIN DISPLAY 1552 432 ATTR Name
-                ALIGNMENT SOFT-BCENTER
-            END DISPLAY
-        END BRANCH
         BEGIN BRANCH M(0)
             WIRE 1104 528 1248 528
             WIRE 1104 528 1104 544
@@ -282,32 +230,28 @@ BEGIN SCHEMATIC
             END DISPLAY
         END BRANCH
         BEGIN BRANCH XLXN_103
-            WIRE 1328 1024 1344 1024
+            WIRE 1312 1024 1344 1024
         END BRANCH
-        BEGIN BRANCH C(2)
-            WIRE 1328 1088 1360 1088
-            WIRE 1360 1088 1360 1152
-            WIRE 1360 1152 1360 1184
-            BEGIN DISPLAY 1360 1152 ATTR Name
-                ALIGNMENT SOFT-TVCENTER
+        BEGIN BRANCH M(2)
+            WIRE 1312 1088 1360 1088
+            BEGIN DISPLAY 1360 1088 ATTR Name
+                ALIGNMENT SOFT-LEFT
             END DISPLAY
         END BRANCH
-        INSTANCE XLXI_52 1328 1152 M0
         INSTANCE XLXI_49 1600 1120 M0
         BEGIN BRANCH XLXN_109
             WIRE 944 848 944 864
             WIRE 944 848 1056 848
             WIRE 1056 848 1056 1056
-            WIRE 1056 1056 1072 1056
         END BRANCH
-        BEGIN BRANCH C(0)
+        BEGIN BRANCH M(0)
             WIRE 1600 992 1632 992
             WIRE 1632 992 1680 992
             BEGIN DISPLAY 1632 992 ATTR Name
                 ALIGNMENT SOFT-BCENTER
             END DISPLAY
         END BRANCH
-        BEGIN BRANCH C(1)
+        BEGIN BRANCH M(1)
             WIRE 1600 1056 1632 1056
             WIRE 1632 1056 1680 1056
             BEGIN DISPLAY 1632 1056 ATTR Name
@@ -326,5 +270,41 @@ BEGIN SCHEMATIC
         IOMARKER 528 464 A(31:0) R180 28
         IOMARKER 528 592 M(2:0) R180 28
         IOMARKER 528 528 B(31:0) R180 28
+        INSTANCE XLXI_52 1312 1152 M0
+        BEGIN INSTANCE XLXI_53 1872 592 R0
+        END INSTANCE
+        BEGIN INSTANCE XLXI_54 1680 592 R0
+        END INSTANCE
+        BEGIN BRANCH XLXN_110(31:0)
+            WIRE 1776 592 1776 672
+        END BRANCH
+        BEGIN BRANCH XLXN_111(31:0)
+            WIRE 1840 624 1840 672
+            WIRE 1840 624 1968 624
+            WIRE 1968 592 1968 624
+        END BRANCH
+        BEGIN BRANCH A(31:0)
+            WIRE 1744 192 1744 240
+            WIRE 1744 240 1744 336
+            BEGIN DISPLAY 1744 240 ATTR Name
+                ALIGNMENT SOFT-TVCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH A(31:0)
+            WIRE 1936 192 1936 256
+            WIRE 1936 256 1936 336
+            BEGIN DISPLAY 1936 256 ATTR Name
+                ALIGNMENT SOFT-TVCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH M(1)
+            WIRE 1200 672 1216 672
+            WIRE 1216 672 1248 672
+            BEGIN DISPLAY 1216 672 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN INSTANCE XLXI_55 944 128 R90
+        END INSTANCE
     END SHEET
 END SCHEMATIC

@@ -9,18 +9,9 @@ BEGIN SCHEMATIC
         SIGNAL XLXN_18
         SIGNAL S
         SIGNAL Cout
-        SIGNAL XLXN_35
-        SIGNAL XLXN_36
-        SIGNAL XLXN_37
         SIGNAL A
-        SIGNAL XLXN_39
-        SIGNAL XLXN_40
         SIGNAL B
-        SIGNAL XLXN_42
-        SIGNAL XLXN_43
         SIGNAL Cin
-        SIGNAL XLXN_45
-        SIGNAL XLXN_46
         SIGNAL XLXN_47
         SIGNAL XLXN_48
         SIGNAL XLXN_49

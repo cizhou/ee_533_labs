@@ -2,13 +2,13 @@ Command line:
    ./adder_32b_tb_isim_beh.exe
      -intstyle  ise
      -ipchost  localhost
-     -ipcport  1392
+     -ipcport  1079
 
-Sun Jan 25 22:44:07 2026
+Mon Jan 26 17:33:59 2026
 
 Total Line Count : 42
 
- Elaboration Time: 0.03125 sec
+ Elaboration Time: 0.015625 sec
 
  Current Memory Usage: 142.471 Meg
 
@@ -32,9 +32,9 @@ isimrun 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 
- Total Simulation Time: 0.078125 sec
+ Total Simulation Time: 0.046875 sec
 
  Current Memory Usage: 151.974 Meg
 
-Sun Jan 25 22:44:33 2026
+Mon Jan 26 17:35:33 2026
 
