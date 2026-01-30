@@ -1,0 +1,17 @@
+C:/Xilinx/10.1/ISE/verilog/src/glbl.v
+C:/lab3_verilog2/generic_regs.v
+K:/IP0_K.14/env/Databases/ip/export/rtf/verilog/src/XilinxCoreLib/BLKMEMDP_V6_3.v
+N:/K.31/rtf/verilog/src/unisims/VCC.v
+N:/K.31/rtf/verilog/src/unisims/FDC.v
+C:/lab3_verilog2/dropfifo.vf
+C:/lab3_verilog2/busmerge.v
+N:/K.31/rtf/verilog/src/unisims/FDCE.v
+N:/K.31/rtf/verilog/src/unisims/FD.v
+C:/lab3_verilog2/wordmatch.vf
+C:/lab3_verilog2/comparator.vf
+C:/lab3_verilog2/reg9B.vf
+C:/lab3_verilog2/detect7B.vf
+C:/lab3_verilog2/small_fifo.v
+C:/lab3_verilog2/fallthrough_small_fifo_v2.v
+C:/lab3_verilog2/ids_sim.v
+C:/lab3_verilog2/ids_tb.tfw

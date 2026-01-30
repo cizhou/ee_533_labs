@@ -1,0 +1,141 @@
+Determining compilation order of HDL files
+Analyzing Verilog file comparator.vf
+Analyzing Verilog file wordmatch.vf
+Analyzing Verilog file small_fifo.v
+WARNING:HDLCompiler:693 - "small_fifo.v" Line 36. Parameter declaration becomes
+   local in small_fifo with formal parameter declaration list
+Analyzing Verilog file reg9B.vf
+Analyzing Verilog file dual9Bmem.v
+Analyzing Verilog file busmerge.v
+Analyzing Verilog file generic_regs.v
+Analyzing Verilog file fallthrough_small_fifo_v2.v
+Analyzing Verilog file dropfifo.vf
+Analyzing Verilog file detect7B.vf
+Analyzing Verilog file ids_sim.v
+WARNING:HDLCompiler:693 - "ids_sim.v" Line 92. Parameter declaration becomes
+   local in ids_sim with formal parameter declaration list
+WARNING:HDLCompiler:693 - "ids_sim.v" Line 93. Parameter declaration becomes
+   local in ids_sim with formal parameter declaration list
+WARNING:HDLCompiler:693 - "ids_sim.v" Line 94. Parameter declaration becomes
+   local in ids_sim with formal parameter declaration list
+Analyzing Verilog file ids_tb.tfw
+Analyzing Verilog file C:/Xilinx/10.1/ISE/verilog/src/glbl.v
+Saving Verilog parse-tree work.COMP8_HXILINX_comparator into
+c:/lab3_verilog2/isim/work/@c@o@m@p8_@h@x@i@l@i@n@x_comparator.sdb
+Saving Verilog parse-tree work.AND7_HXILINX_comparator into
+c:/lab3_verilog2/isim/work/@a@n@d7_@h@x@i@l@i@n@x_comparator.sdb
+Saving Verilog parse-tree work.comparator into
+c:/lab3_verilog2/isim/work/comparator.sdb
+Saving Verilog parse-tree work.OR8_HXILINX_wordmatch into
+c:/lab3_verilog2/isim/work/@o@r8_@h@x@i@l@i@n@x_wordmatch.sdb
+Saving Verilog parse-tree work.wordmatch into
+c:/lab3_verilog2/isim/work/wordmatch.sdb
+Saving Verilog parse-tree work.small_fifo into
+c:/lab3_verilog2/isim/work/small_fifo.sdb
+Saving Verilog parse-tree work.FD16CE_HXILINX_reg9B into
+c:/lab3_verilog2/isim/work/@f@d16@c@e_@h@x@i@l@i@n@x_reg9@b.sdb
+Saving Verilog parse-tree work.FD8CE_HXILINX_reg9B into
+c:/lab3_verilog2/isim/work/@f@d8@c@e_@h@x@i@l@i@n@x_reg9@b.sdb
+Saving Verilog parse-tree work.reg9B into c:/lab3_verilog2/isim/work/reg9@b.sdb
+Saving Verilog parse-tree work.dual9Bmem into
+c:/lab3_verilog2/isim/work/dual9@bmem.sdb
+Saving Verilog parse-tree work.busmerge into
+c:/lab3_verilog2/isim/work/busmerge.sdb
+Saving Verilog parse-tree work.generic_regs into
+c:/lab3_verilog2/isim/work/generic_regs.sdb
+Saving Verilog parse-tree work.fallthrough_small_fifo into
+c:/lab3_verilog2/isim/work/fallthrough_small_fifo.sdb
+Saving Verilog parse-tree work.fallthrough_small_fifo_tester into
+c:/lab3_verilog2/isim/work/fallthrough_small_fifo_tester.sdb
+Saving Verilog parse-tree work.FD8CE_HXILINX_dropfifo into
+c:/lab3_verilog2/isim/work/@f@d8@c@e_@h@x@i@l@i@n@x_dropfifo.sdb
+Saving Verilog parse-tree work.COMP8_HXILINX_dropfifo into
+c:/lab3_verilog2/isim/work/@c@o@m@p8_@h@x@i@l@i@n@x_dropfifo.sdb
+Saving Verilog parse-tree work.CB8CLE_HXILINX_dropfifo into
+c:/lab3_verilog2/isim/work/@c@b8@c@l@e_@h@x@i@l@i@n@x_dropfifo.sdb
+Saving Verilog parse-tree work.CB8CE_HXILINX_dropfifo into
+c:/lab3_verilog2/isim/work/@c@b8@c@e_@h@x@i@l@i@n@x_dropfifo.sdb
+Saving Verilog parse-tree work.dropfifo into
+c:/lab3_verilog2/isim/work/dropfifo.sdb
+Saving Verilog parse-tree work.detect7B into
+c:/lab3_verilog2/isim/work/detect7@b.sdb
+Saving Verilog parse-tree work.ids_sim into
+c:/lab3_verilog2/isim/work/ids_sim.sdb
+Saving Verilog parse-tree work.ids_tb into c:/lab3_verilog2/isim/work/ids_tb.sdb
+Saving Verilog parse-tree work.glbl into c:/lab3_verilog2/isim/work/glbl.sdb
+Starting static elaboration
+WARNING:HDLCompiler:597 - "fallthrough_small_fifo_v2.v" Line 41. Module
+   small_fifo does not have a parameter named PROG_FULL_THRESHOLD
+Restoring Verilog parse-tree unisims_ver.OR2B1 from
+c:/xilinx/10.1/ise/verilog/hdp/nt/unisims_ver/unisims_ver.sdbl
+Restoring Verilog parse-tree unisims_ver.AND3B1 from
+c:/xilinx/10.1/ise/verilog/hdp/nt/unisims_ver/unisims_ver.sdbl
+Restoring Verilog parse-tree unisims_ver.FD from
+c:/xilinx/10.1/ise/verilog/hdp/nt/unisims_ver/unisims_ver.sdbl
+Restoring Verilog parse-tree unisims_ver.FDCE from
+c:/xilinx/10.1/ise/verilog/hdp/nt/unisims_ver/unisims_ver.sdbl
+Restoring Verilog parse-tree unisims_ver.AND3B2 from
+c:/xilinx/10.1/ise/verilog/hdp/nt/unisims_ver/unisims_ver.sdbl
+Restoring Verilog parse-tree unisims_ver.OR2 from
+c:/xilinx/10.1/ise/verilog/hdp/nt/unisims_ver/unisims_ver.sdbl
+Restoring Verilog parse-tree unisims_ver.AND2B1 from
+c:/xilinx/10.1/ise/verilog/hdp/nt/unisims_ver/unisims_ver.sdbl
+Restoring Verilog parse-tree unisims_ver.FDC from
+c:/xilinx/10.1/ise/verilog/hdp/nt/unisims_ver/unisims_ver.sdbl
+Restoring Verilog parse-tree unisims_ver.VCC from
+c:/xilinx/10.1/ise/verilog/hdp/nt/unisims_ver/unisims_ver.sdbl
+Restoring Verilog parse-tree xilinxcorelib_ver.BLKMEMDP_V6_3 from
+c:/xilinx/10.1/ise/verilog/hdp/nt/xilinxcorelib_ver/xilinxcorelib_ver.sdbl
+WARNING:HDLCompiler:559 - "generic_regs.v" Line 258. Instantiating unknown
+   module generic_sw_regs
+WARNING:HDLCompiler:559 - "generic_regs.v" Line 299. Instantiating unknown
+   module generic_hw_regs
+WARNING:HDLCompiler:1016 - "ids_sim.v" Line 112. Port prog_full is not connected
+   to this instance
+WARNING:HDLCompiler:189 - "ids_sim.v" Line 180. Actual bit length 96 differs
+   from formal bit length 48 for port software_regs
+WARNING:HDLCompiler:189 - "ids_sim.v" Line 183. Actual bit length 32 differs
+   from formal bit length 16 for port hardware_regs
+Completed static elaboration
+Fuse Memory Usage: 55176 Kb
+Fuse CPU Usage: 218 ms
+Compiling module glbl
+Compiling module small_fifo(WIDTH=72,MAX_DEPTH_BI...
+Compiling module fallthrough_small_fifo(WIDTH=72,...
+Compiling module FD16CE_HXILINX_reg9B
+Compiling module FD8CE_HXILINX_reg9B
+Compiling module reg9B
+Compiling module COMP8_HXILINX_comparator
+Compiling module OR2B1
+Compiling module AND7_HXILINX_comparator
+Compiling module comparator
+Compiling module OR8_HXILINX_wordmatch
+Compiling module wordmatch
+Compiling module AND3B1
+Compiling module FD(INIT=1'b0)_0
+Compiling module FD(INIT=1'b0)_1
+Compiling module FD(INIT=1'b0)_2
+Compiling module FD(INIT=1'b0)_3
+Compiling module FD(INIT=1'b0)_4
+Compiling module FDCE(INIT=1'b0)_0
+Compiling module busmerge
+Compiling module detect7B
+Compiling module COMP8_HXILINX_dropfifo
+Compiling module AND3B2
+Compiling module FD8CE_HXILINX_dropfifo
+Compiling module CB8CE_HXILINX_dropfifo
+Compiling module CB8CLE_HXILINX_dropfifo
+Compiling module OR2
+Compiling module AND2B1
+Compiling module FDC(INIT=1'b0)_0
+Compiling module VCC
+Compiling module BLKMEMDP_V6_3(c_addra_width=8,c_...
+Compiling module dual9Bmem
+Compiling module dropfifo
+Compiling module generic_regs(UDP_REG_SRC_WIDTH=2...
+Compiling module ids_sim
+Compiling module ids_tb
+Compiled 36 Verilog Units
+Built simulation executable ids_tb_isim_beh.exe
+Fuse Memory Usage: 59788 Kb
+Fuse CPU Usage: 483 ms
