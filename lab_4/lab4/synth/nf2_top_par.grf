@@ -1,0 +1,2027 @@
+Release 10.1.03 - par K.39 (lin64)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Thu Feb 05 15:34:08 2026
+
+  SmartGuide Results
+  ------------------
+  This section describes the guide results after invoking the Router. This
+  report accurately reflects the differences between the input design
+  and the guide design.
+
+  Number of Components in the input design    |  15382
+    Number of guided Components               |  15072 out of  15382  98.0%
+    Number of re-implemented Components       |    301 out of  15382   2.0%
+    Number of new/changed Components          |      9 out of  15382   0.1%
+  Number of Nets in the input design          |  39372
+    Number of guided Nets                     |  36261 out of  39372  92.1%
+    Number of partially guided Nets           |   1493 out of  39372   3.8%
+    Number of re-routed Nets                  |   1591 out of  39372   4.0%
+    Number of new/changed Nets                |     27 out of  39372   0.1%
+
+
+The following Components were re-implemented.
+---------------------------------------------
+ nf2_core/core_256kb_0_reg_addr(224) : SLICE_X60Y41.
+ nf2_core/core_256kb_0_reg_wr_data(385) : SLICE_X51Y75.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(6) : SLICE_X51Y77.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(29) : SLICE_X35Y128.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(0)49_2 : SLICE_X31Y112.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(0)94 : SLICE_X30Y122.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/ram_addr_a(0) : SLICE_X16Y110.
+ nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_pkt_good_sync/ackA_clkB_d1 : SLICE_X34Y101.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N33 : SLICE_X37Y105.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(8)91 : SLICE_X32Y128.
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/control_reg_not0001 : SLICE_X3Y71.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/tx_fifo_wr : SLICE_X36Y77.
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkt_bytes_removed_reg_ack : SLICE_X46Y111.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/enable_2_mux00007 : SLICE_X35Y104.
+ nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/state : SLICE_X23Y39.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<1>
+: SLICE_X6Y67.
+ nf2_core/core_reg_addr(8) : SLICE_X36Y104.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(25) : SLICE_X61Y55.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_lo_reg_acked : SLICE_X30Y112.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+4> : SLICE_X7Y64.
+ nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/_old_delta_215(0) : SLICE_X23Y38.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d2<2> :
+SLICE_X7Y67.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_out(29) : SLICE_X40Y46.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_out(25) : SLICE_X42Y44.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_out(24) : SLICE_X40Y42.
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_stored_reg_ack : SLICE_X38Y133.
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_0_data(15) : SLICE_X21Y67.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/N21 : SLICE_X30Y116.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_out(18) : SLICE_X42Y49.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(30) : SLICE_X58Y58.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(28) : SLICE_X56Y57.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(8) : SLICE_X14Y60.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(18) : SLICE_X14Y65.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(9) : SLICE_X10Y61.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(10) : SLICE_X14Y61.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/wr_rst_d1 :
+SLICE_X10Y58.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(12) : SLICE_X12Y60.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(21) : SLICE_X18Y66.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(30) : SLICE_X46Y50.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(22) : SLICE_X14Y67.
+ nf2_core/cpu_q_dma_rd_data(1)(1) : SLICE_X63Y41.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(29) : SLICE_X44Y48.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(12) : SLICE_X60Y38.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(9)19 : SLICE_X84Y88.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(7) : SLICE_X56Y40.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(12) : SLICE_X46Y78.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(13) : SLICE_X48Y79.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(11) : SLICE_X62Y42.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(22) : SLICE_X46Y84.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(23) : SLICE_X48Y84.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(16) : SLICE_X48Y80.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(11) : SLICE_X48Y78.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(10) : SLICE_X62Y41.
+ nf2_core/user_data_path/ids/matcher/XLXN_45(111) : SLICE_X72Y86.
+ nf2_core/user_data_path/ids/pattern_low(13) : SLICE_X73Y97.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/control_reg(3) : SLICE_X33Y27.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_wr_data(17) : SLICE_X18Y115.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/addr_min(16) : SLICE_X18Y111.
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg(31) : SLICE_X12Y21.
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/mac_tx_data_in_reg(0) : SLICE_X12Y23.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(10) : SLICE_X10Y60.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_eval_full/src_max_pkts_in_q_held_not0001 : SLICE_X18Y139.
+ nf2_core/mac_groups[3].nf2_mac_grp/tx_queue/tx_fifo_64.gmac_tx_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg<0> : SLICE_X13Y20.
+ nf2_core/core_256kb_0_reg_rd_data(448) : SLICE_X61Y51.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_req_d1 : SLICE_X13Y62.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_addr(3) : SLICE_X13Y58.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/held_wr_data_b(7) : SLICE_X37Y128.
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_1_data(24) : SLICE_X8Y68.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(2) : SLICE_X53Y78.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/merge_wr_data(11) :
+SLICE_X26Y131.
+ nf2_core/core_reg_addr(20) : SLICE_X14Y114.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_lo_reg_rd_data_held(8) : SLICE_X15Y114.
+ nf2_core/nf2_reg_grp_u/cpu_addr(21) : SLICE_X15Y137.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/held_wr_data_b(1) : SLICE_X38Y125.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/held_wr_data_b(4) : SLICE_X35Y130.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/tx_fifo_data_out(17) : SLICE_X55Y76.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_wr_addr_reg_ack : SLICE_X15Y108.
+ nf2_core/core_reg_addr(19) : SLICE_X15Y116.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(3)131 :
+SLICE_X101Y65.
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_in_q_dst(4) : SLICE_X16Y130.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/held_wr_data_b(0) : SLICE_X17Y128.
+ nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_fifos[4].gmac_tx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/
+count_d1<8> : SLICE_X23Y37.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/wr_update_b : SLICE_X33Y128.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_b(14) :
+SLICE_X22Y138.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(13)95 : SLICE_X23Y134.
+ nf2_core/udp_reg_wr_data(30) : SLICE_X25Y129.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(1)41 : SLICE_X26Y128.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/prev_din_a(6) : SLICE_X30Y134.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(6)95 : SLICE_X31Y132.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(3)41 : SLICE_X30Y128.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/bypass_read_b_and000051_2 :
+SLICE_X32Y129.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N94 : SLICE_X20Y130.
+ nf2_core/core_256kb_0_reg_wr_data(390) : SLICE_X51Y76.
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_0_data(64) : SLICE_X17Y67.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/ram_addr_b(1) : SLICE_X14Y115.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/state_and0004 : SLICE_X30Y123.
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_in_q_dst(3) : SLICE_X17Y129.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/N411 : SLICE_X57Y74.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_233(6)48 : SLICE_X53Y77.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_233(5)48 : SLICE_X51Y44.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/addr_min(18) : SLICE_X18Y110.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_addr(3) : SLICE_X40Y47.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/Madd_curr_plus_new_b_lut(4) :
+SLICE_X21Y128.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(1) : SLICE_X21Y132.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_lo_reg_rd_data_held(18) : SLICE_X19Y110.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_lo_reg_rd_data_held(17) : SLICE_X19Y112.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_b(15) :
+SLICE_X14Y119.
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_src_wr_done : SLICE_X18Y129.
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_in_q_dst(7) : SLICE_X16Y129.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(18)82 : SLICE_X34Y122.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_lo_reg_rd_data_held(15) : SLICE_X20Y120.
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(0) : SLICE_X21Y130.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_b(5) : SLICE_X18Y130.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/bypass_read_a_cmp_eq00003 :
+SLICE_X30Y131.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(24)50 :
+SLICE_X103Y64.
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg(25) : SLICE_X13Y21.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_hi_reg_rd_data_held(10) : SLICE_X21Y118.
+ nf2_core/user_data_path/ids/matcher/XLXN_45(64) : SLICE_X74Y90.
+ nf2_core/user_data_path/op_lut_in_reg_addr(14) : SLICE_X74Y91.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_addr_held(10) : SLICE_X74Y92.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(55)5 : SLICE_X74Y95.
+ nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_pkt_good_sync/ackB : SLICE_X75Y88.
+ nf2_core/user_data_path/op_lut_in_reg_addr(12) : SLICE_X75Y90.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_b(15) : SLICE_X22Y128.
+ nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_pkt_good_sync/ackB_synch : SLICE_X75Y91.
+ nf2_core/user_data_path/op_lut_in_reg_addr(16) : SLICE_X75Y93.
+ nf2_core/nf2_dma/nf2_dma_regs/iface_reset_internal_extend(8) : SLICE_X75Y94.
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_in_q_reg_ack : SLICE_X18Y128.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_b(14) : SLICE_X18Y137.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_b(21) : SLICE_X21Y134.
+ nf2_core/user_data_path/output_queues/oq_regs/num_overhead_bytes_stored_reg_ack : SLICE_X28Y119.
+ nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_fifos[4].gmac_tx_fifo/BU2/U0/grf.rf/gl0.wr/gwss.w
+sts/wr_rst_d1 : SLICE_X22Y41.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_data_b(16) :
+SLICE_X22Y112.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_b(17) : SLICE_X20Y127.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(4) : SLICE_X30Y124.
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(6) : SLICE_X23Y129.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_data_b(13) :
+SLICE_X23Y138.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/prev_din_b(4) : SLICE_X23Y137.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_addr(1) : SLICE_X35Y106.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_hi_reg_rd_data_held(0) : SLICE_X23Y112.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_addr_hi_reg_wr : SLICE_X32Y112.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_lo_reg_rd_data_held(6) : SLICE_X23Y115.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_b(10) :
+SLICE_X23Y116.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_hi_reg_rd_data_held(16) : SLICE_X23Y118.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(9) : SLICE_X25Y125.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/bypass_read_b : SLICE_X34Y121.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(0) : SLICE_X25Y133.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(18)13 : SLICE_X11Y103.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/bypass_read_b : SLICE_X17Y110.
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(3) : SLICE_X22Y130.
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(11) : SLICE_X23Y132.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(11)13 : SLICE_X11Y107.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_b(28) :
+SLICE_X23Y141.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(6)13 : SLICE_X9Y99.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(1)13 : SLICE_X10Y101.
+ nf2_core/udp_reg_wr_data(28) : SLICE_X35Y125.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(11)7 : SLICE_X19Y136.
+ nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(2) : SLICE_X35Y112.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(9)7 : SLICE_X34Y132.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_b(6) :
+SLICE_X24Y111.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_b(6) :
+SLICE_X24Y112.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_data_b(20) :
+SLICE_X27Y114.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/N01 : SLICE_X25Y128.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(23) : SLICE_X29Y131.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/N48 : SLICE_X26Y129.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(20) : SLICE_X26Y123.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(24) : SLICE_X29Y132.
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_err41 : SLICE_X15Y20.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/held_wr_data_a(1) :
+SLICE_X26Y120.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(8) : SLICE_X26Y130.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/held_wr_data_b(2) : SLICE_X26Y127.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(18) : SLICE_X25Y132.
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_dst(2) : SLICE_X26Y126.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(13) : SLICE_X27Y127.
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_removed_reg_ack : SLICE_X43Y114.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_ack : SLICE_X26Y107.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(6) :
+SLICE_X22Y113.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/held_wr_addr_a(2) :
+SLICE_X27Y120.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(15)95 : SLICE_X30Y135.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_b(8) :
+SLICE_X28Y111.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/bypass_read_b :
+SLICE_X28Y114.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(23) :
+SLICE_X28Y116.
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_dst(1) : SLICE_X28Y131.
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_dst(18) : SLICE_X29Y128.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_addr_a(0)9 :
+SLICE_X38Y105.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/bypass_read_a_and0000_1 :
+SLICE_X43Y108.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/N46 : SLICE_X29Y114.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/wr_update_a :
+SLICE_X29Y115.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_b(20) :
+SLICE_X14Y137.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_b(6) : SLICE_X23Y130.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(14) : SLICE_X28Y129.
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_in_q_reg_ack : SLICE_X32Y124.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/N42 : SLICE_X30Y115.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(26) : SLICE_X31Y124.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/ram_addr_a(2) : SLICE_X31Y130.
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkt_bytes_stored_reg_ack : SLICE_X29Y124.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(18)41 : SLICE_X31Y120.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(14)67 : SLICE_X30Y127.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/N21 : SLICE_X33Y127.
+ nf2_core/mac_groups[0].nf2_mac_grp/disable_crc_gen : SLICE_X32Y26.
+ nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_ack : SLICE_X17Y121.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_b(26) :
+SLICE_X14Y121.
+ nf2_core/user_data_path/output_queues/stored_pkt_data_length(0) : SLICE_X32Y115.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(2)13 : SLICE_X34Y130.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(6) : SLICE_X33Y130.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/control_reg(5) : SLICE_X33Y26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N42 : SLICE_X38Y104.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_addr(2) : SLICE_X33Y106.
+ nf2_core/core_reg_wr_data(6) : SLICE_X33Y110.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_words_left_reg_acked : SLICE_X33Y129.
+ nf2_core/wr_0_data(36) : SLICE_X34Y104.
+ nf2_core/core_4mb_reg_wr_data(37) : SLICE_X34Y106.
+ nf2_core/user_data_path/output_queues/oq_regs/addr(2) : SLICE_X34Y120.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(1) : SLICE_X32Y127.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_stored_reg/N70 : SLICE_X36Y133.
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/cam_cmp_din(28) : SLICE_X103Y61.
+ nf2_core/user_data_path/output_queues/oq_regs/addr(4) : SLICE_X35Y122.
+ nf2_core/user_data_path/output_queues/oq_regs/addr(3) : SLICE_X35Y121.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/N8 : SLICE_X35Y124.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(27) : SLICE_X36Y131.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/ram_addr_a(1) : SLICE_X19Y130.
+ nf2_core/core_256kb_0_reg_rd_data(133) : SLICE_X36Y76.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/ram_addr_a(2) : SLICE_X18Y135.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(23) :
+SLICE_X37Y106.
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/tx_pkt_sent_delta : SLICE_X6Y66.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_lo_reg_req_cmp_eq0000 : SLICE_X22Y126.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_nxt_cmp_eq0000 : SLICE_X35Y120.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(12) : SLICE_X36Y127.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(10) : SLICE_X34Y131.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_data_held(13) : SLICE_X39Y122.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(17) : SLICE_X34Y127.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_addr_hi_reg_req : SLICE_X34Y108.
+ nf2_core/user_data_path/output_queues/remove_pkt/pkt_len_counter(0) : SLICE_X19Y62.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(20) :
+SLICE_X36Y108.
+ nf2_core/core_256kb_0_reg_wr_data(394) : SLICE_X39Y76.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(2) :
+SLICE_X6Y94.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(16) :
+SLICE_X41Y108.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(13) :
+SLICE_X38Y110.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(0) :
+SLICE_X39Y105.
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_dropped_reg_ack : SLICE_X48Y123.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(10) :
+SLICE_X38Y111.
+ nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_rx/rx_state_FSM_FFd3-In10 : SLICE_X91Y25.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/merge_update_and0000 : SLICE_X32Y130.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(11) : SLICE_X38Y76.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(1) :
+SLICE_X42Y107.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(31) :
+SLICE_X39Y110.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(15) :
+SLICE_X39Y111.
+ nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_pkt_dropped_sync/ackB_clkA : SLICE_X39Y112.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/prev_din_b(2) : SLICE_X37Y122.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_b(20) : SLICE_X21Y136.
+ nf2_core/core_256kb_0_reg_wr_data(279) : SLICE_X40Y51.
+ nf2_core/core_256kb_0_reg_wr_data(286) : SLICE_X41Y53.
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/cam_cmp_din(9) : SLICE_X115Y59.
+ nf2_core/cpci_reg_rd_data(7) : SLICE_X17Y139.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/prev_din_a(7) : SLICE_X40Y114.
+ nf2_core/core_256kb_0_reg_wr_data(432) : SLICE_X41Y47.
+ nf2_core/core_256kb_0_reg_wr_data(266) : SLICE_X41Y46.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc_asreg_d1<
+5> : SLICE_X117Y61.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_pkts_in_q_reg_req_cmp_eq0000 : SLICE_X20Y128.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_b(28) :
+SLICE_X41Y110.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/prev_din_a(3) : SLICE_X41Y112.
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/lpm_cam/N277 : SLICE_X112Y60.
+ nf2_core/core_256kb_0_reg_wr_data(446) : SLICE_X40Y50.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_pkts_removed_reg_req_cmp_eq0000 : SLICE_X34Y124.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_addr(0) : SLICE_X63Y38.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_b(29) :
+SLICE_X38Y108.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_ack : SLICE_X19Y109.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(0)21_2 : SLICE_X84Y89.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/wr_update_b :
+SLICE_X43Y109.
+ nf2_core/udp_reg_wr_data(25) : SLICE_X43Y111.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/enable_1_mux00007 : SLICE_X34Y105.
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/cam_cmp_din(18) : SLICE_X116Y45.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(15)71 : SLICE_X38Y120.
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/lpm_cam/N263 : SLICE_X100Y65.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/wr_update_a :
+SLICE_X38Y106.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_b(6) :
+SLICE_X42Y108.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_hi_reg_rd_data_held_not0001 : SLICE_X32Y109.
+ nf2_core/core_256kb_0_reg_addr(192) : SLICE_X49Y78.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/tx_fifo_data_out(13) : SLICE_X48Y81.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_addr(2) : SLICE_X53Y79.
+ nf2_core/user_data_path/output_queues/stored_pkt_data_length(5) : SLICE_X32Y118.
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_ack : SLICE_X31Y129.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_addr_hi_reg_ack : SLICE_X37Y109.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N76 : SLICE_X35Y108.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(8)50 : SLICE_X33Y126.
+ nf2_core/core_256kb_0_reg_addr(193) : SLICE_X49Y76.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/in_state_nxt138_SW0_2 : SLICE_X38Y77.
+ nf2_core/sram64.sram_arbiter/sram_reg_access/wr_addr(0) : SLICE_X2Y111.
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_dst_wr_done : SLICE_X19Y129.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_b(23) :
+SLICE_X19Y137.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12)95 : SLICE_X22Y139.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_b(23) :
+SLICE_X23Y117.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(10)26 : SLICE_X23Y127.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12)26 : SLICE_X25Y131.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_b(29) :
+SLICE_X30Y121.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(5)95 : SLICE_X30Y129.
+ nf2_core/udp_reg_wr_data(27) : SLICE_X31Y121.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/ram_addr_a(0)5_1 : SLICE_X31Y126.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(3)95 : SLICE_X31Y128.
+ nf2_core/user_data_path/output_queues/oq_regs/num_overhead_bytes_removed_reg_wr : SLICE_X32Y120.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N42 : SLICE_X33Y123.
+
+
+The following Components are new/changed.
+-----------------------------------------
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(18)13 : SLICE_X11Y103.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(11)13 : SLICE_X11Y107.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(6)13 : SLICE_X9Y99.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(1)13 : SLICE_X10Y101.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(11)7 : SLICE_X19Y136.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(9)7 : SLICE_X34Y132.
+ nf2_core/sram64.sram_arbiter/sram_reg_access/wr_addr(0) : SLICE_X2Y111.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(10)26 : SLICE_X23Y127.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12)26 : SLICE_X25Y131.
+
+
+The following Nets were re-routed.
+----------------------------------
+ nf2_core/nf2_reg_grp_u/cpu_addr(23).
+ nf2_core/core_256kb_0_reg_addr(224).
+ nf2_core/core_256kb_0_reg_addr(225).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_tx_queue/pkt_len_out(0).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/rx_pkt_byte_cnt(0).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt(2).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/N18.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in_addsub0000(4).
+ nf2_core/core_256kb_0_reg_wr_data(385).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in_addsub0000(1).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(1).
+ nf2_core/core_256kb_0_reg_wr_data(390).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in_addsub0000(6).
+ nf2_core/core_256kb_0_reg_wr_data(391).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in_addsub0000(7).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(6).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(7).
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(29).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(29)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N17.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/state_and0004.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(29).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/N6.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_lo_reg_req_cmp_eq0000.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_tx_queue/pkt_len_out(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_addr_reg/reg_ack_nxt.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(0)94.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(0)49_2.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(0)16.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N19.
+ nf2_core/user_data_path/output_queues/oq_regs/addr(4).
+ nf2_core/user_data_path/output_queues/parsed_pkt_word_len(3).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/tx_fifo_data_out(17).
+ nf2_core/user_data_path/output_queues/parsed_pkt_word_len(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(0)49_1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N98.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(0)39.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_removed_reg/ram_din_a(30)0.
+ nf2_core/udp_reg_rd_data(25).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(0)62.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(0)67.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(0)79.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(0)84.
+ nf2_core/user_data_path/output_queues/oq_regs/num_overhead_bytes_stored_reg_rd_data(0).
+ nf2_core/nf2_reg_grp_u/core_reg_req_cmp_eq0000.
+ nf2_core/user_data_path/output_queues/oq_regs/num_overhead_bytes_removed_reg_wr_data(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_dropped_reg/prev_din_a(28).
+ nf2_core/sram64.sram_arbiter/sram_reg_access/sram_reg_rd_data(31).
+ nf2_core/user_data_path/output_queues/remove_pkt/N7.
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/cam_cmp_din(9).
+ nf2_core/sram_reg_addr(5).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/tx_fifo_data_out(27).
+ nf2_core/user_data_path/output_queues/oq_regs/addr(2).
+ nf2_core/user_data_path/output_queues/oq_regs/addr(3).
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/cam_cmp_din(18).
+ nf2_core/sram64.sram_arbiter/sram_reg_access/sram_reg_rd_data(26).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_pkts_in_q_reg_req_cmp_eq0000.
+ nf2_core/user_data_path/output_queues/oq_regs/num_overhead_bytes_removed_reg_rd_data(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(3)86.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/ram_addr_a(0)5_1.
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_goodframe_out_next20_SW0_1.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/Eqn_04_2.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/mac_grp_reg_req_d1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/N25.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/N9.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/ram_addr_a(0)5_2.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/ram_addr_a(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(4)67.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(4)91.
+ nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_pkt_good_sync/ackA_clkB_d1.
+ nf2_core/user_data_path/output_queues/oq_regs/num_overhead_bytes_removed_reg_req.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/wr_update_b.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N27.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N36.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N33.
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/access(0).
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg(31).
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg(25).
+ nf2_core/core_256kb_0_reg_wr_data(365).
+ nf2_core/core_256kb_0_reg_wr_data(376).
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/reg_file_in_addsub0000(24).
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_delay_dvld_12.
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/N5.
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_counter_next_addsub0000(4).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(7)13.
+ nf2_core/user_data_path/output_queues/oq_regs/num_overhead_bytes_removed_reg_wr.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(6)86.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+4>.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(3).
+ nf2_core/core_256kb_0_reg_wr_data(381).
+ nf2_core/user_data_path/oq_in_reg_data(12).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(8)37.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_host_iface/reg_src_held(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_wr_data(1).
+ nf2_core/udp_reg_rd_data(19).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(9)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(8)82.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(8)50.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(8)55.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(8)67.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(8)72.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(8)91.
+ nf2_core/sram_reg_addr(11).
+ nf2_core/user_data_path/output_queues/oq_regs/num_overhead_bytes_removed_reg_wr_data(21).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d3<2>.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<1>.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<2>.
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/N57.
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/reg_file_in_addsub0000(4).
+ nf2_core/core_256kb_0_reg_wr_data(362).
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/N01.
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/control_reg_not0001.
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/reg_file_addr(2).
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/reg_file_in_addsub0000(26).
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/reg_file_in(26).
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/wr_data_ph1(16).
+ nf2_core/core_256kb_0_reg_wr_data(370).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_addr_reg/held_wr_data_a(2).
+ nf2_core/core_256kb_0_reg_wr_data(371).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(9)19.
+ nf2_core/udp_reg_wr_data(27).
+ nf2_core/udp_reg_wr_data(28).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_almost_f
+ull_i_not0001.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/wr_rst_d1.
+ nf2_core/core_reg_addr(10).
+ nf2_core/core_reg_addr(11).
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/mac_tx_data_in_reg(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_dropped_reg/rd_data_b(23).
+ nf2_core/user_data_path/output_queues/dst_oq_wr_addr(10).
+ nf2_core/user_data_path/output_queues/remove_pkt/lo_addr(18).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/N14.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/in_state_nxt138_SW0_2.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/in_state_nxt136.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/in_state_nxt138_1.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/tx_fifo_wr.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_removed_reg/ram_addr_a(2)9.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_addr(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_removed_reg/reg_ack_nxt.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_removed_reg/ram_addr_a(2).
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkt_bytes_removed_reg_ack.
+ nf2_core/mac_groups[3].nf2_mac_grp/gig_eth_mac/mac_tx/mac_tx_data_in_reg(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/enable_2_mux00007.
+ nf2_core/mac_groups[3].nf2_mac_grp/tx_queue/tx_fifo_64.gmac_tx_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg<1>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(24).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/tx_fifo_data_out(13).
+ nf2_core/user_data_path/ids_in_ctrl(5).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(26)95.
+ nf2_core/user_data_path/ids_in_data(49).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_d1<
+6>.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_host_iface/reg_addr_held(18).
+ nf2_core/user_data_path/ids/in_fifo_data(36).
+ nf2_core/core_reg_addr(20).
+ nf2_core/core_reg_addr(21).
+ nf2_core/core_reg_addr(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/bypass_read_b.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/prev_din_a(0).
+ nf2_core/core_256kb_0_reg_wr_data(453).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(27).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(30).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(28).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(31).
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/cam_cmp_din(22).
+ nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/N19.
+ nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/state.
+ nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/state_nxt.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<1>.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc<2>.
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/reg_cnt(1)2.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_tx_queue/tx_fifo_data_out(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_eval_full/full_pkts_in_q_7_or0000.
+ nf2_core/core_reg_addr(8).
+ nf2_core/core_reg_addr(9).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(11).
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_1_data(24).
+ nf2_core/nf2_reg_grp_u/N62.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_eval_full/full_pkts_in_q_0_and0007.
+ nf2_core/sram64.sram_arbiter/sram_reg_access/wr_data(69).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt_mux0000(0)12.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt_mux0000(0)39.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_wr_data(11).
+ nf2_core/user_data_path/udp_reg_addr_in(5).
+ nf2_core/udp_reg_addr(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/curr_plus_new_b_d1_not0001.
+ nf2_core/sram_reg_addr(18).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_addr(1).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_addr(2).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_addr(3).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_tx_queue/tx_fifo_data_out(0).
+ nf2_core/mac_groups[0].nf2_mac_grp/gmac_rx_badframe.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in_addsub0000(7).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(7).
+ nf2_core/mac_groups[3].nf2_mac_grp/tx_queue/tx_fifo_64.gmac_tx_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc<6>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in_addsub0000(25).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in_addsub0000(19).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(25).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(19).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_ack.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_lo_reg_acked.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N3.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_lo_reg_acked_mux0000.
+ nf2_core/udp_reg_addr(17).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<4>.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg<6>.
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/Eqn_031_2.
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/N2.
+ nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/Mmux__old_delta_215_5_f6.
+ nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/N50.
+ nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/N51.
+ nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/_old_delta_215(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_host_iface/reg_addr_held(5).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i_o
+r000094/O.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d2<2>.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_tx_queue/tx_fifo_data_out(15).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in(29).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in(4).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_out(29).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_out(4).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(26).
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(12).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in(25).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in(5).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_out(25).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_out(5).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in_addsub0000(1).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in(24).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in(6).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_out(24).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_out(6).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(25).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_stored_reg/ram_addr_a(2)9.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_stored_reg/reg_ack_nxt.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_stored_reg/ram_addr_a(2).
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_stored_reg_ack.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_host_iface/reg_addr_held(22).
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_0_data(15).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_host_iface/reg_addr_held(21).
+ nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/reg_file_in(7).
+ nf2_core/core_256kb_0_reg_wr_data(491).
+ nf2_core/sram64.sram_arbiter/sram_reg_access/wr_data(57).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in(10).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/prev_din_a(8).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_eval_full/src_max_pkts_in_q_held_not0001.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/wr_update_a.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/N21.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/control_reg(5).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in(18).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in(19).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_out(18).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_out(19).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/ram_we_b.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/reg_ack_nxt.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/N78.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_addr_a(2).
+ nf2_core/user_data_path/output_queues/oq_regs/reg_addr(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/reg_ack_nxt.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_cntr/generic_cntr_regs/reg_data_in_d1(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/ram_addr_a(2).
+ nf2_core/device_id_reg/Mrom__varindex00008_f5.
+ nf2_core/device_id_reg/N01.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_addr(0).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(22).
+ nf2_core/core_256kb_0_reg_wr_data(292).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(30).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file31/A4'.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(28).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file29/A4'.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/prev_din_a(10).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_addr(4).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_addr(3).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(8).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(8).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file9/A4'.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(11).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(18).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(18).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file19/A4'.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(9).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(9).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file10/A4'.
+ nf2_core/cpci_bus/p2n_wr_data(1).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(10).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(10).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file11/A4'.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(5).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in_addsub0000(11).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(12).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(12).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file13/A4'.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(21).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(21).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file22/A4'.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(24).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/prev_din_a(8).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d3<6>.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/mem/dout_mem<40>.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(30).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(30).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file31/A4'.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/N38.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(17).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(20).
+ nf2_core/out_data(1)(59).
+ nf2_core/core_reg_addr(19).
+ nf2_core/out_data(7)(25).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/mem/dout_mem<13>.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/mem/dout_mem<17>.
+ nf2_core/cpu_q_dma_rd_data(0)(1).
+ nf2_core/cpci_reg_rd_data(7).
+ nf2_core/cpci_reg_wr_data(3).
+ nf2_core/cpci_reg_wr_data(11).
+ nf2_core/cpci_reg_wr_data(14).
+ nf2_core/cpci_reg_wr_data(22).
+ nf2_core/cpci_reg_wr_data(25).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(22).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(22).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file23/A4'.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_tx_queue/tx_fifo_data_out(1).
+ nf2_core/cpu_q_dma_rd_data(1)(1).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(29).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(29).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file30/A4'.
+ nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_fifos[4].gmac_tx_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/
+count_d1<8>.
+ nf2_core/user_data_path/output_queues/store_pkt/wr_0_addr_plus1_addsub0000(3).
+ nf2_core/user_data_path/ids/drop_fifo/XLXN_157(44).
+ nf2_core/user_data_path/ids/drop_fifo/XLXN_157(59).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/ram_we_b.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/ram_addr_a(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/ram_addr_a(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/ram_din_a(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/ram_din_a(4).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/ram_din_a(5).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/ram_din_a(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/ram_din_a(12).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/rd_data_b(5).
+ nf2_core/sram_reg_addr(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/ram_addr_a(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/N46.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/ram_addr_b(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/write_data_b(2).
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_in_q_reg_rd_data(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/rd_data_b(0).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_addr(4).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_addr(2).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(3).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64_rx_fifo_din(21).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/mem/dout_mem<61>.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(12).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(12).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file13/A4'.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(9)5.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(9)10.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/mem/dout_mem<28>.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/mem/dout_mem<18>.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/mem/dout_mem<19>.
+ nf2_core/cpci_reg_addr(23).
+ nf2_core/sram64.sram_arbiter/cnet_sram_sm/rd_0_data(64).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(7).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file8/A4'.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(12).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(12).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file13/A4'.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/ram_addr_b(1).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/N1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_dropped_reg/ram_addr_a(2).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(13).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(13).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file14/A4'.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_we_b.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_din_a(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_din_a(4).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_din_a(8).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_din_a(9).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_din_a(12).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_din_a(13).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_din_a(14).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_din_a(18).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_din_a(20).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_din_a(23).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_din_a(24).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_din_a(26).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_din_a(30).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/write_data_b(5).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/write_data_b(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/write_data_b(10).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/write_data_b(14).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/write_data_b(15).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/write_data_b(17).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/write_data_b(18).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/write_data_b(20).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/write_data_b(21).
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkt_bytes_stored_reg_rd_data(6).
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkt_bytes_stored_reg_rd_data(9).
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkt_bytes_stored_reg_rd_data(27).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/rd_data_b(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/rd_data_b(4).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/rd_data_b(11).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/rd_data_b(13).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/rd_data_b(17).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/rd_data_b(18).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/rd_data_b(20).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/rd_data_b(22).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/rd_data_b(23).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/rd_data_b(25).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/rd_data_b(26).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/rd_data_b(27).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/rd_data_b(28).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/ram_we_a.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/ram_din_a(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/ram_din_a(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/ram_din_a(21).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/ram_din_a(23).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/ram_din_a(27).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/write_data_b(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/write_data_b(10).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/write_data_b(15).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/write_data_b(16).
+ nf2_core/user_data_path/output_queues/oq_regs/num_overhead_bytes_stored_reg_rd_data(15).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(5).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(8).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(9).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(13).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(15).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(16).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(17).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(20).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(21).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(22).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(23).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(26).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(28).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(29).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(30).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/rd_data_b(31).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_rd_addr_reg/ram_addr_a(0).
+ nf2_core/user_data_path/output_queues/src_oq_rd_addr(0).
+ nf2_core/user_data_path/output_queues/src_oq_rd_addr(3).
+ nf2_core/user_data_path/output_queues/src_oq_rd_addr(18).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_stored_reg/ram_we_a.
+ nf2_core/mac_groups[1].nf2_mac_grp/rx_pkt_byte_cnt(1).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(11).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file12/A4'.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(10).
+ nf2_core/mac_groups[0].nf2_mac_grp/gmac_tx_data(0).
+ nf2_core/mac_groups[0].nf2_mac_grp/gmac_tx_data(2).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(22).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(22).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file23/A4'.
+ nf2_core/mac_groups[3].nf2_mac_grp/tx_queue/tx_fifo_64.gmac_tx_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg<0>.
+ nf2_core/mac_groups[3].nf2_mac_grp/gmac_tx_data(0).
+ nf2_core/mac_groups[3].nf2_mac_grp/gmac_tx_data(1).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(15).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(23).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(23).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file24/A4'.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(11).
+ nf2_core/user_data_path/output_port_lookup/in_fifo_data(13).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(16).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(16).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file17/A4'.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(11).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(11).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file12/A4'.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in(10).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/Mram_reg_file11/A4'.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_out(18).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_addr_a(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(10).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(13).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(14).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(15).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(16).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(20).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(23).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(24).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(25).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(27).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(28).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(29).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(31).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/write_data_b(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/write_data_b(28).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/write_data_b(29).
+ nf2_core/user_data_path/output_queues/oq_regs/num_overhead_bytes_removed_reg_rd_data(19).
+ nf2_core/user_data_path/output_queues/oq_regs/num_overhead_bytes_removed_reg_rd_data(22).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/rd_data_b(18).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/rd_data_b(29).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/ram_addr_a(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/ram_din_a(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/ram_din_a(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/ram_din_a(18).
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_rd_data(2).
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_rd_data(6).
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_rd_data(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/rd_data_b(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/rd_data_b(9).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/max_pkts_in_q_reg/ram_din_a(1).
+ nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_src(2).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(12).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(51)26.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXN_60.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXN_63.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXN_69.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXI_39/I36.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXN_68.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXN_67.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXN_66.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXN_65.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXN_16.
+ nf2_core/user_data_path/ids/matcher/XLXN_45(111).
+ nf2_core/user_data_path/ids/matcher/XLXN_45(95).
+ nf2_core/user_data_path/output_queues/input_fifo_data_out(8).
+ nf2_core/user_data_path/output_queues/input_fifo_data_out(34).
+ nf2_core/user_data_path/output_queues/input_fifo_data_out(36).
+ nf2_core/user_data_path/output_queues/input_fifo_data_out(56).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_addr_reg/ram_we_a.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_addr_reg/ram_we_b.
+ nf2_core/user_data_path/output_queues/dst_oq_wr_addr(12).
+ nf2_core/user_data_path/op_lut_in_reg_addr(14).
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_3/XLXN_60.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_3/XLXN_63.
+ nf2_core/core_4mb_reg_wr_data(37).
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_6/XLXN_60.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_6/XLXN_63.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_6/XLXN_69.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_6/XLXI_39/I36.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_6/XLXN_68.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_6/XLXN_67.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_6/XLXN_66.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_6/XLXN_65.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXN_7.
+ nf2_core/user_data_path/ids/pattern_low(13).
+ nf2_core/user_data_path/ids/pattern_low(14).
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_4/XLXN_69.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXN_12.
+ nf2_core/core_256kb_0_reg_rd_wr_L(15).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/N18.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/ram_addr_a(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/ram_din_a(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/ram_din_a(7).
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_removed_reg_rd_data(9).
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_removed_reg_rd_data(11).
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_removed_reg_rd_data(20).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/rd_data_b(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/rd_data_b(4).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/rd_data_b(5).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/rd_data_b(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/rd_data_b(10).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full_thresh_reg/ram_addr_a(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full_thresh_reg/ram_din_a(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full_thresh_reg/ram_din_a(5).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_full_thresh_src(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_full_thresh_src(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_full_thresh_src(10).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(52)26.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/Mmux__old_delta_215_6_f51.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/Mmux__old_delta_215_8_f5.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/_old_delta_215(1).
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/Mmux__old_delta_215_8_f5.
+ nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_pkt_dropped_sync/ackB_and0000.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/N531.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(53)10.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/N51.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(15).
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_state_FSM_FFd2-In21.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/control_reg(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(15).
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_dst_wr_done.
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_src_wr_done.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_eval_full/full_words_left_0_not0001.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_lo_reg_rd_data_held(17).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_wr_data(17).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/addr_min(16).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_lo_reg_rd_data_held(18).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/addr_min(18).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_wr_data(18).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(53)26.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(62)10.
+ nf2_core/user_data_path/output_queues/store_pkt/N2.
+ nf2_core/core_4mb_reg_rd_data(53).
+ nf2_core/core_reg_rd_data(21).
+ nf2_core/core_reg_rd_data(29).
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/cam_cmp_din(29).
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/cam_cmp_din(28).
+ nf2_core/core_4mb_reg_rd_data(41).
+ nf2_core/core_reg_rd_data(23).
+ nf2_core/core_4mb_reg_rd_data(63).
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_err21.
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_mux0000(22)146_1.
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_mux0000(0).
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_mux0000(22).
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg(9).
+ nf2_core/user_data_path/output_queues/remove_pkt/out_wr_selected(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_hi_reg_rd_data_held(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_hi_reg_rd_data_held(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_words_left_reg_wr_data_addsub0000(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_words_left_reg_wr_data_addsub0000(1).
+ nf2_core/core_4mb_reg_rd_data(40).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_hi_reg_rd_data_held(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_words_left_reg_wr_data_addsub0000(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_hi_reg_rd_data_held(5).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_words_left_reg_wr_data_addsub0000(5).
+ nf2_core/user_data_path/output_queues/remove_pkt/out_wr_selected(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_hi_reg_rd_data_held(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_lo_reg_rd_data_held(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_lo_reg_rd_data_held(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_words_left_reg_wr_data_addsub0000(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_words_left_reg_wr_data_addsub0000(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_hi_reg_rd_data_held_not0001.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_lo_reg_rd_data_held(8).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_words_left_reg_wr_data_addsub0000(8).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_words_left_reg_wr_data_addsub0000(9).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_hi_reg_rd_data_held(10).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_hi_reg_rd_data_held(11).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_words_left_reg_wr_data_addsub0000(10).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_words_left_reg_wr_data_addsub0000(11).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_words_left_reg_wr_data_addsub0000(12).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_words_left_reg_wr_data_addsub0000(13).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(26).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_lo_reg_rd_data_held(15).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_words_left_reg_wr_data_addsub0000(14).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_hi_reg_rd_data_held(16).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_hi_reg_rd_data_held(17).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_words_left_reg_wr_data_addsub0000(18).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_req_d1.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(10).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(11).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_eval_full/src_update_d1.
+ nf2_core/udp_reg_rd_data(12).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/enable_1_mux00007.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/enable_1_cmp_eq0001.
+ nf2_core/core_4mb_reg_rd_data(50).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(42)19.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(43)0.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(43)19.
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_in_q_src(4).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/N43.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/N43.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/N43.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/N43.
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_mux0000(22)131.
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_mux0000(22)116_2.
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg(1).
+ nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/Mmux__old_delta_215_9_f5.
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/tx_pkt_sent_delta.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/N621.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/N621.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/N621.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/N621.
+ nf2_core/user_data_path/ids/drop_fifo/XLXI_2/I_36_32/I_36_32_1.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/N641.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/N641.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_rd_data_mux0000(0).
+ nf2_core/core_256kb_0_reg_rd_data(448).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/N641.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/N385.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/N641.
+ nf2_core/core_4mb_reg_rd_data(32).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in_addsub0000(5).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_233(0)84.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/N107.
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/N41.
+ nf2_core/core_256kb_0_reg_wr_data(492).
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_in_q_dst(3).
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_in_q_dst(4).
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_in_q_dst(5).
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_in_q_dst(7).
+ nf2_core/user_data_path/output_queues/remove_pkt/pkt_len_counter(0).
+ nf2_core/user_data_path/output_queues/remove_pkt/N2.
+ nf2_core/user_data_path/output_queues/remove_pkt/Result(3).
+ nf2_core/user_data_path/output_queues/remove_pkt/Result(7).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/N12.
+ nf2_core/nf2_reg_grp_u/N61.
+ nf2_core/udp_reg_rd_data(6).
+ nf2_core/sram64.sram_arbiter/sram_reg_access/sram_reg_rd_data(6).
+ nf2_core/mac_groups[0].nf2_mac_grp/rx_pkt_byte_cnt(9).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/prev_din_a(14).
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(4)9.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/N15.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/N171.
+ nf2_core/mac_groups[1].nf2_mac_grp/mac_grp_regs/N48.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc_asreg_d1<
+5>.
+ nf2_core/core_256kb_0_reg_wr_data(495).
+ nf2_core/device_id_reg/Mrom__varindex00001_f5.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/_sub0001(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/held_wr_data_b(7).
+ nf2_core/sram64.sram_arbiter/sram_reg_access/wr_data(26).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/N74.
+ nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_fifos[4].gmac_tx_fifo/BU2/U0/grf.rf/gl0.wr/gwss.w
+sts/wr_rst_d1.
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_err4.
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_err9.
+ nf2_core/sram64.sram_arbiter/sram_reg_access/wr_addr(0).
+ nf2_core/sram64.sram_arbiter/sram_reg_access/rd_addr(0).
+ nf2_core/sram64.sram_arbiter/sram_reg_access/wr_addr(1).
+ nf2_core/sram64.sram_arbiter/sram_reg_access/rd_addr(1).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/tx_pkt_stored_delta_not0001.
+ nf2_core/user_data_path/output_queues/stored_pkt_data_length(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/held_wr_data_a(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/merge_wr_data(1).
+ nf2_core/user_data_path/output_queues/stored_pkt_data_length(3).
+ nf2_core/user_data_path/output_queues/stored_pkt_data_length(4).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/held_wr_data_a(4).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/merge_wr_data(3).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_cnt_mux0000(2).
+ nf2_core/user_data_path/output_queues/stored_pkt_data_length(5).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_addr_reg/ram_addr_a(0)23.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_addr_reg/N4.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_addr_reg/write_a_or0000_inv.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/Madd_wr_data_joint_cy(10).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(7)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(7)26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(22)10.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/merge_wr_data(11).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(7)41.
+ nf2_core/nf2_reg_grp_u/cpu_addr(21).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/prev_din_a(4).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/Madd_curr_plus_new_b_lut(4).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/curr_plus_new_a_d1_not0001.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_addr_reg/held_wr_addr_a(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_addr_reg/ram_addr_a(2)23.
+ nf2_core/sram64.sram_arbiter/sram_reg_access/wr_data(49).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/bypass_read_b.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(12).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(14).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N90.
+ nf2_core/nf2_reg_grp_u/cpu_addr_nxt(21).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/_sub0001(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/held_wr_data_b(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/_sub0001(4).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/held_wr_data_b(4).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_wr_data(8).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/state_mux0000(2)37.
+ nf2_core/unused_reg_core_4mb_3/reg_req_d1.
+ nf2_core/core_4mb_reg_ack(1).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in_addsub0000(8).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(22)151.
+ nf2_core/mac_groups[0].nf2_mac_grp/rx_pkt_byte_cnt(2).
+ nf2_core/user_data_path/output_queues/oq_regs/reg_data_held(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_wr_addr_reg_ack.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(3)129.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(3)131.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/reg_ack_nxt.
+ nf2_core/user_data_path/output_queues/remove_pkt/output_fifo64.output_fifos[5].gmac_tx_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/
+count<4>.
+ nf2_core/nf2_reg_grp_u/cpu_rd_data(29).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/N371.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/prev_din_a(5).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/ram_addr_a(1)6.
+ nf2_core/user_data_path/oq_in_reg_data(8).
+ nf2_core/user_data_path/output_queues/oq_regs/reg_data_held(8).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N78.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_words_left_reg_req_cmp_eq0000.
+ nf2_core/nf2_reg_grp_u/cpu_rd_data(7).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/N109.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(1).
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(10).
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(11).
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(12).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(11).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(9).
+ nf2_core/user_data_path/op_lut_in_reg_addr(12).
+ nf2_core/user_data_path/op_lut_in_reg_addr(13).
+ nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_pkt_good_sync/ackA_clkB_d1.
+ nf2_core/user_data_path/op_lut_in_reg_addr(16).
+ nf2_core/user_data_path/op_lut_in_reg_addr(18).
+ nf2_core/user_data_path/op_lut_in_reg_addr(19).
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(18)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(14)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(16)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(2)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(13)9.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_b(26).
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(25).
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/N48.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(18).
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(3)9.
+ nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_req.
+ nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(12).
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(27).
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(17)9.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(1).
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(0)9.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(6)9.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N84.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(5).
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(15)9.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(6).
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(7).
+ nf2_core/user_data_path/output_queues/oq_regs/num_overhead_bytes_removed_reg_wr_data(4).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/curr_plus_new_a(4).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/curr_plus_new_a(5).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/ctrl_prev_is_0.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(3)41.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(3)95.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N76.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/held_wr_data_b(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N96.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/held_wr_data_b(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/ram_addr_a(2)6.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N74.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(5)41.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(5)86.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(5)95.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(2)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(2)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(2)26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(10)41.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(10)86.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(2)41.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(10)95.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/wr_update_b.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(11)41.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(13)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(13)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(13)26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(11)95.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(13)41.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_data_b(14).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12)26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_b(14).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12)41.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(13)86.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(11)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(11)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(11)26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(13)95.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(1)41.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(1)86.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(20)10.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(1)95.
+ nf2_core/udp_reg_wr_data(30).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(1)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(1)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(1)26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(2)86.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(2)95.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(6)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(6)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(6)26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(15)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(15)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(15)26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(6)41.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/prev_din_a(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(15)41.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/prev_din_a(8).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/merge_update_and0000262_SW1_1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(10)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(10)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(10)26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(6)95.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(3)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(3)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(3)26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(5)31.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(5)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(5)26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/bypass_read_a_cmp_eq00003.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(7)95.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(9)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(9)26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/N17.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/bypass_read_b_and000051_2.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(29)10.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N94.
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(44).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_pkts_removed_reg_req_cmp_eq0000.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(18)18.
+ nf2_core/udp_reg_rd_data(8).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/N109.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/N70.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(9).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in_addsub0000(2).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in_addsub0000(21).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_233(0)27.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/N45.
+ nf2_core/mac_groups[2].nf2_mac_grp/rx_queue/rx_pkt_bad_sync/ackB_synch.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_233(0)208.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_233(0)163.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_233(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(17).
+ nf2_core/user_data_path/ids/state_cmp_eq0001.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(14).
+ nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/state_and0004_2.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_wr_addr_reg_req.
+ nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_wr_data(2).
+ nf2_core/udp_reg_rd_data(9).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_233(3)2.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/tx_fifo_data_out(18).
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_6/XLXI_1/I_36_32/I_36_32_1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N82.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/curr_plus_new_a(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/curr_plus_new_a(12).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/prev_din_a(12).
+ nf2_core/user_data_path/ids/module_regs/software_regs(66).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/prev_din_a(11).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(56)22.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/curr_plus_new_a(10).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N92.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_eval_empty/empty_7_mux0000125.
+ nf2_core/user_data_path/ids/matcher/XLXN_45(100).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_host_iface/reg_addr_held(19).
+ nf2_core/core_256kb_0_reg_wr_data(446).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_233(6)51_SW0_1.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_233(6)17.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/N411.
+ nf2_core/mac_groups[0].nf2_mac_grp/disable_crc_gen.
+ nf2_core/nf2_reg_grp_u/N20.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_words_left_reg_acked.
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_ack.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N42.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_233(6)48.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_233(5)48.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_233(6)48.
+ nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_pkt_good_sync/ackB.
+ nf2_core/user_data_path/output_port_lookup/ip_arp/next_hop_mac_result(11).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/Result(18)1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12)54.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_addr_hi_reg_wr.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_data_b(17).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(24).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_b(10).
+ nf2_core/udp_reg_rd_data(29).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(27).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(15)59.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(15)71.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(15)86.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_wr_addr_reg_acked.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(10)59.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N12.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/N58.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12)59.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(4).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/Madd_curr_plus_new_b_lut(4).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/next_hop_mac_result(33).
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_7/XLXI_31/I_36_41/free/I_36_41_2.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_7/XLXI_31/I_36_41/I_36_41_1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N88.
+ nf2_core/user_data_path/ids/pattern_low(25).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_eval_empty/empty_7_mux0000162.
+ nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/N57.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXI_1/I_36_32/free/I_36_32_2.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXI_1/I_36_32/I_36_32_1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(17)27.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(17)79.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/N24.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/_old_delta_215(7)1.
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in_addsub0000(9).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(31).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in_addsub0000(10).
+ nf2_core/user_data_path/output_port_lookup/ip_arp/next_hop_mac_result(20).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in_addsub0000(12).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in_addsub0000(18).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in_addsub0000(19).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/reg_file_in_addsub0000(24).
+ nf2_core/udp_reg_rd_data(11).
+ nf2_core/core_256kb_0_reg_wr_data(274).
+ nf2_core/core_256kb_0_reg_wr_data(275).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/N41.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/curr_plus_new_a(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/N52.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg_not0001.
+ nf2_core/mac_groups[1].nf2_mac_grp/mac_grp_regs/reg_file_in_addsub0000(27).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_data_b(15).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(25).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_b(15).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(15).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_b(15).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_overhead_bytes_stored_reg_acked.
+ nf2_core/user_data_path/output_queues/oq_regs/num_overhead_bytes_stored_reg_ack.
+ nf2_core/mac_groups[2].nf2_mac_grp/mac_grp_regs/reg_file_in_addsub0000(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_data_b(31).
+ nf2_core/user_data_path/output_queues/oq_regs/reg_data_held(13).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(18).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_b(4).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_b(10).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/write_b.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_b(10).
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/_old_delta_215(6)1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/curr_plus_new_a(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N80.
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/_old_delta_215(8)1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_b(18).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N48.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(18)7.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(18)63.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(18)58.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(18)46.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(18)41.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(18)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(18)82.
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_mux0000(20)131.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc<0>.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc<1>.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in_addsub0000(3).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_233(4)2.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in_addsub0000(13).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/reg_file_in_addsub0000(15).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(18).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_data_b(22).
+ nf2_core/udp_reg_rd_data(14).
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_233(9)48.
+ nf2_core/user_data_path/output_queues/oq_regs/max_pkts_in_q_reg_ack.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_rd_addr_reg_ack.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/result_ready_local9.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_233(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(26).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_data_b(26).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/Madd_curr_plus_new_b_lut(1).
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/Madd_curr_plus_new_b_lut(6).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_233(1)206.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_b(5).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_b(5).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_b(18).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(22).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/N351.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_5/XLXI_3/I_36_41/free/I_36_41_2.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_5/XLXI_3/I_36_41/I_36_41_1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(26).
+ nf2_core/user_data_path/ids/matcher/XLXN_45(67).
+ nf2_core/user_data_path/ids/matcher/XLXN_45(66).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_data_b(21).
+ nf2_core/user_data_path/ids/matcher/XLXN_45(64).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(20).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_data_b(20).
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_counter_next_addsub0000(5).
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_counter_next_addsub0000(6).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(52)5.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_5/XLXI_33/I_36_32/free/I_36_32_2.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_5/XLXI_33/I_36_32/I_36_32_1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/N21.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXI_2/I_36_41/I_36_41_1.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXI_2/I_36_32/free/I_36_32_2.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(49)5.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/ram_addr_a(2)9.
+ nf2_core/user_data_path/output_queues/store_pkt/N48.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_full_thresh_reg_ack.
+ nf2_core/user_data_path/ids/matcher/XLXN_45(73).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(24)18.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(24)23.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(24)35.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(24)40.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(24)50.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXI_2/I_36_32/I_36_32_1.
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/N2.
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_reg_mux0000(6).
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXI_2/I_36_41/free/I_36_41_2.
+ nf2_core/udp_reg_rd_data(30).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(2)59.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_4/XLXI_1/I_36_32/I_36_32_1.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_4/XLXI_1/I_36_41/free/I_36_41_2.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_4/XLXI_1/I_36_41/I_36_41_1.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXI_31/I_36_41/free/I_36_41_2.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXI_31/I_36_32/I_36_32_1.
+ nf2_core/user_data_path/ids/matcher/XLXN_45(98).
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_8/XLXI_31/I_36_41/free/I_36_41_2.
+ nf2_core/udp_reg_rd_data(15).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_data_b(20).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_data_b(21).
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/lpm_cam/N281.
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/lpm_cam/N277.
+ nf2_core/user_data_path/output_port_lookup/ip_lpm/lpm_cam/N263.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(30).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(31).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_data_b(30).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_dropped_reg/bypass_read_a_and0000_1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_dropped_reg/reg_ack_nxt.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_6/XLXN_6.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_6/XLXI_1/I_36_41/free/I_36_41_2.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_6/XLXI_1/I_36_41/I_36_41_1.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_6/XLXI_1/I_36_32/free/I_36_32_2.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXN_8.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXI_3/I_36_41/free/I_36_41_2.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXI_3/I_36_41/I_36_41_1.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXI_3/I_36_32/free/I_36_32_2.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXI_3/I_36_32/I_36_32_1.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_4/XLXN_8.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_4/XLXI_3/I_36_41/free/I_36_41_2.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_4/XLXI_3/I_36_41/I_36_41_1.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_4/XLXI_3/I_36_32/free/I_36_32_2.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_4/XLXI_3/I_36_32/I_36_32_1.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_addr_held(10).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_addr_held(11).
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(39).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(55)5.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_data_b(28).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_data_a(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_b(9).
+ nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_pkt_good_sync/ackB_and0000.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_2/XLXI_32/I_36_41/I_36_41_1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(0).
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_5/XLXI_2/I_36_41/I_36_41_1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_b(15).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_b(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_b(15).
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_9/XLXN_7.
+ nf2_core/mac_groups[1].nf2_mac_grp/rx_queue/rx_pkt_good_sync/ackB_synch.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_rd_addr_reg/write_a_or0000_inv.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_6/XLXN_14.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_6/XLXI_33/I_36_41/free/I_36_41_2.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_6/XLXI_33/I_36_41/I_36_41_1.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_6/XLXI_33/I_36_32/free/I_36_32_2.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_6/XLXI_33/I_36_32/I_36_32_1.
+ nf2_core/nf2_dma/nf2_dma_regs/iface_reset_internal_extend(7).
+ nf2_core/nf2_dma/nf2_dma_regs/iface_reset_internal_extend(8).
+ nf2_core/nf2_dma/nf2_dma_regs/iface_reset_internal_extend(9).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/N23.
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_in_q_reg_ack.
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_4/XLXI_2/I_36_32/I_36_32_1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_addr_lo_reg_wr_data(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_b(14).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_b(23).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_b(23).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(23).
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(38).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_b(21).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_b(21).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(12).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/ram_addr_a(2)9.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(14).
+ nf2_core/user_data_path/ids/matcher/XLXI_6/XLXI_4/XLXI_2/I_36_41/free/I_36_41_2.
+ nf2_core/user_data_path/in_arb_in_reg_rd_wr_L.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(16).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(5).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_data_b(16).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/Madd_curr_plus_new_b_lut(5
+).
+ nf2_core/user_data_path/output_port_lookup/next_hop_mac(42).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/N44.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_b(17).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_data_a(9).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_b(17).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(9).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/N64.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_a(4).
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(6).
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(2).
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(18).
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(8).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_data_b(28).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(13).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/prev_din_b(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_data_b(13).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/curr_data_a(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/prev_din_b(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/prev_din_b(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/curr_data_a(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/curr_data_a(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/prev_din_b(4).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(55)40.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(53)40.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/curr_plus_new_b(8).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(49)40.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(8)10.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_b(16).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/state_or0001.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(17).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/N78.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(22).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_b(10).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/N64.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(23).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_b(23).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/held_wr_addr_a(2).
+ nf2_core/user_data_path/output_queues/stored_pkt_data_length(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N181.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_data_a(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/N541.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_a(9).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/N2.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_data_b(17).
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(12)9.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/N01.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/N2.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/bypass_read_b_and0000.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/bypass_read_b.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/N72.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_a(0).
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/N48.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/bypass_read_b_and0000.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(18)32.
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(3).
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_eval_full/src_oq_full_thresh_held(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_eval_full/src_oq_full_thresh_held(7).
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(11).
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_reg_wr_data(13).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_data_b(25).
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(11)9.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(25).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_b(28).
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(1)9.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(24).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(30).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_addr_hi_reg_req.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_addr_hi_reg_ack.
+ nf2_core/sram_reg_addr(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_rd_addr_reg/reg_ack_nxt.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_b(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_b(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_b(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_b(16).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(21).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/wr_update_a.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_stored_reg/N01.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/bypass_read_b_and000063.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/N01.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/N01.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/held_wr_data_b(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/held_wr_data_b(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/merge_wr_data(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/merge_wr_data(3).
+ nf2_core/mac_groups[0].nf2_mac_grp/mac_grp_regs/N67.
+ nf2_core/mac_groups[1].nf2_mac_grp/rx_pkt_word_cnt(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_din_a(23)0.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_a(23).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_b(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/N48.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_data_a(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_din_a(20)0.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_a(20).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_addr_a(2)9.
+ nf2_core/user_data_path/output_queues/oq_regs/num_overhead_bytes_removed_reg_ack.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_din_a(24)0.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_a(24).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(8).
+ nf2_core/user_data_path/output_queues/remove_pkt/Result(0).
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_dst(1).
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_dst(2).
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_dst(18).
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_left_dst(17).
+ nf2_core/mac_groups[1].nf2_mac_grp/tx_pkt_word_cnt(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/N50.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_a(17).
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_err30.
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/CRC_err41.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_a(14).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(28).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_a(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/N66.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_b(29).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_b(29).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/N56.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_a(8).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(30)19.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/N36.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_a(18).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/curr_plus_new_a(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_a(12).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/N46.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_a(13).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_din_a(30)0.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_a(30).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/N52.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/curr_data_a(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/N21.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/curr_plus_new_a(16).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/curr_plus_new_a(17).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/curr_plus_new_a(18).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/ram_addr_a(2)9.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/reg_ack_nxt.
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_removed_reg_ack.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_b(8).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_a(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/N72.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_a(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/N42.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_a(21).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_rd_addr_reg/ram_we_a_1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(29).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_data_b(29).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12)86.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12)95.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/prev_din_a(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/curr_plus_new_b(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(15)95.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(0)45.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/Madd_curr_plus_new_b_lut(8
+).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/ram_din_a(0)14_1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/N46.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/state_or00013.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/N70.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_a(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/bypass_read_b_and0000.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/ram_din_a(23)0.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_a(23).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/ram_din_a(27)0.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_a(27).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/N21.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_addr_a(2)9.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_bin<1>.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/N42.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/N40.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gl0.rd/gras.rsts/comp0.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N302.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/curr_plus_new_a(1).
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkt_bytes_stored_reg_ack.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/curr_plus_new_a(18).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/N441.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/prev_din_a(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/prev_din_a(18).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_stored_reg/curr_plus_new_a(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N47.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_addr_a(0)9.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/bypass_read_a_and0000_1.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_233(0)148.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/_old_delta_233(0)208.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N86.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/prev_din_a(8).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/wr_update_a_or0000.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_stored_reg/curr_plus_new_a(26).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/prev_din_b(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/enable_4_cmp_eq0001.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/prev_din_b(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/prev_din_b(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/curr_plus_new_a(3).
+ nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_pkt_bad_sync/ackA.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/curr_plus_new_a(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/prev_din_b(9).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/prev_din_b(11).
+ nf2_core/user_data_path/output_queues/oq_regs/reg_data_held(23).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(49)10.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/curr_plus_new_a(24).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_b(20).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/curr_plus_new_a(26).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/N50.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_a(14).
+ nf2_core/user_data_path/output_port_lookup/input_fifo/fifo/N01.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/prev_din_b(20).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/curr_plus_new_a(26).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/prev_din_a(9).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/state_mux0000(4)159.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/state_mux0000(4)137_1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_data_a(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_b(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(9).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(10).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(11).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(13).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(14).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(15).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(16).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/reg_ack_nxt.
+ nf2_core/user_data_path/output_queues/oq_regs/num_words_in_q_reg_ack.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(17).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(20).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_b(24).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(23).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(24).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(25).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_b(27).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_b(28).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(27).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(28).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_b(29).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(29).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_a(31).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/N597.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(52)10.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_stored_reg/ram_din_a(26)0.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/N24.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/result_ready_local.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_nxt_cmp_eq0000.
+ nf2_core/core_256kb_0_reg_rd_data(291).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(14)67.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(16)7.
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_state_FSM_FFd2-In58.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N62.
+ nf2_core/core_reg_wr_data(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/max_pkts_in_q_reg/reg_ack_nxt.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_eval_empty/empty_7_not0001.
+ nf2_core/wr_0_data(52).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/merge_update_and0000.
+ nf2_core/core_reg_wr_data(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N8.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(6).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(7).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(0)21_2.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_data_held(21).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N42.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N56.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_hi_reg_acked.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(26)19.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_words_left_reg_acked_mux0000.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_data_held(31).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N541.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_data_held(24).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/N6.
+ nf2_core/wr_0_data(36).
+ nf2_core/user_data_path/output_queues/store_pkt/wr_0_data_next(36).
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_held(7).
+ nf2_core/core_reg_wr_data(5).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/merge_update_and0000263_2
+.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_hi_reg/N52.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(12)10.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_hi_reg_req2_2.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/result_ready_local21.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/result_ready_local4.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/result_ready_local26.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/N8.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(3).
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(14)10.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_stored_reg/N70.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_stored_reg/N68.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/N10.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/merge_update_and0000122.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(15)10.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(29)0.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/reg_data_out_mux0000(24)7.
+ nf2_core/user_data_path/output_queues/oq_regs/num_pkts_dropped_reg_ack.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(27)34.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(4).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(27).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(4).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/ram_addr_a(1)21.
+ nf2_core/nf2_dma/nf2_dma_regs/reg_rd_data_mux0000(5).
+ nf2_core/core_256kb_0_reg_rd_data(133).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/tx_pkt_stored_nxt22_1.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(22).
+ nf2_core/core_256kb_0_reg_rd_data(140).
+ nf2_core/core_256kb_0_reg_rd_data(155).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_in_q_reg/ram_addr_a(2)21.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_hi_reg/N9.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_hi_reg/Madd_curr_plus_new_b_lut(15).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(23)0.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N0.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(23).
+ nf2_core/core_256kb_0_reg_rd_data(283).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N58.
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/N24.
+ nf2_core/mac_groups[3].nf2_mac_grp/mac_grp_regs/tx_pkt_sent_delta_mux0000.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_overhead_bytes_removed_reg_acked.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/oq_addr_lo_reg_req_cmp_eq0000_2.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(19)3.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(20).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(20)31.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(22).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(25)34.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(25).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(10).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(11).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/bypass_read_a_and0000_2.
+ nf2_core/user_data_path/output_port_lookup/op_lut_process_sm/out_data_next(59)5.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N441.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/merge_update_and0000263_2.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12)71.
+ nf2_core/user_data_path/output_queues/oq_regs/reg_result(17).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(17).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(5).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(26)34.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(31)34.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N24.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_stored_reg/merge_update_and0000263_2.
+ nf2_core/mac_groups[0].nf2_mac_grp/gig_eth_mac/mac_rx/rx_crc_chk/N4.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N40.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(27).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(19).
+ nf2_core/user_data_path/output_queues/remove_pkt/Mcount_pkt_len_counter_eqn_0.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_removed_reg/prev_din_a(17).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(20).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(11).
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/tx_pkt_word_cnt_nxt(0)119.
+ nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/N02.
+ nf2_core/core_256kb_0_reg_wr_data(394).
+ nf2_core/core_256kb_0_reg_wr_data(395).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(29).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(24)0.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N80.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N78.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N52.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(25)0.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(16).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(25).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(27)0.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(13).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(0)14_1.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N84.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(27).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_dropped_reg/ram_addr_a(2)9.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N64.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(10).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(14).
+ nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_pkt_dropped_sync/ackB_clkA.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N262.
+ nf2_core/mac_groups[1].nf2_mac_grp/gig_eth_mac/mac_rx/rx_state_FSM_FFd3-In10.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/N181.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_hi_reg/prev_din_a(11).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/ram_addr_a(1)9.
+ nf2_core/mac_groups[3].nf2_mac_grp/rx_queue/rx_pkt_dropped_sync/ackB_synch.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N82.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(1).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(24).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N76.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N70.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(21).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(31)0.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/ram_din_a(28)0.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(31).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(28).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(15).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_a(29).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_in_q_reg/prev_din_b(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N281.
+ nf2_core/user_data_path/output_port_lookup/op_lut_regs/router_op_lut_regs_non_cntr/state_mux0000(0)1171.
+ nf2_core/core_256kb_0_reg_wr_data(279).
+ nf2_core/core_256kb_0_reg_wr_data(273).
+ nf2_core/core_256kb_0_reg_wr_data(280).
+ nf2_core/core_256kb_0_reg_wr_data(286).
+ nf2_core/core_256kb_0_reg_wr_data(287).
+ nf2_core/core_256kb_0_reg_wr_data(447).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/N58.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/prev_din_a(7).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/prev_din_a(22).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_pkt_bytes_removed_reg_acked.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N28.
+ nf2_core/core_256kb_0_reg_wr_data(266).
+ nf2_core/core_256kb_0_reg_wr_data(432).
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc<6>.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc_asreg<5>.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_gc_asreg_d1<
+1>.
+ nf2_core/cpu_queues[1].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU2/U0/grf.rf/gcx.clkx/wr_pntr_bin_xor0007.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/num_pkts_in_q_reg_req_cmp_eq0000_2.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_b(28).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_b(29).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/N66.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/prev_din_a(5).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/prev_din_a(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/curr_data_b(5).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/prev_din_a(4).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/N62.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/N32.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/prev_din_a(13).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_stored_reg/curr_plus_new_b(19).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(3).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(8).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(2).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_b(0).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/N01.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_lo_reg/reg_ack_nxt.
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(9).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_removed_reg/curr_data_b(4).
+ nf2_core/udp_reg_wr_data(25).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(22)22.
+ nf2_core/user_data_path/output_port_lookup/ip_new_checksum(15).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_b(16).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_data_b(16).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(23)8.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(16)63.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/prev_din_b(3).
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/wr_update_a_or0000.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_bytes_removed_reg/curr_plus_new_b(6).
+ nf2_core/cpu_queues[0].cpu_dma_queue_i/.cpu_dma_queue_regs/Mmux_reg_rd_data_mux0000101_2.
+ nf2_core/core_256kb_0_reg_addr(193).
+ nf2_core/core_256kb_0_reg_addr(192).
+ nf2_core/nf2_reg_grp_u/N56.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_reg/reg_ack_nxt.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_addr_hi_reg/reg_ack_nxt.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_dropped_reg/N01.
+ nf2_core/nf2_reg_grp_u/N64.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/control_reg(30).
+ nf2_core/nf2_reg_grp_u/N14.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkt_bytes_removed_reg/N01.
+ nf2_core/cpu_queues[2].cpu_dma_queue_i/.cpu_dma_queue_regs/Mmux_reg_rd_data_mux0000101_2.
+ nf2_core/sram64.sram_arbiter/sram_reg_access/sram_wr_data(57).
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(5)9.
+
+
+The following Nets are new/changed.
+-----------------------------------
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(4)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(7)7.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(6)7.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(2)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(3)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(2)7.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(15)13.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(13)7.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(12)7.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(11)7.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(1)7.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(15)7.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(10)7.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(3)7.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(5)7.
+ nf2_core/user_data_path/output_queues/oq_regs/oq_regs_ctrl/reg_result_mux0000(9)7.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(0)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(1)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(5)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(6)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(12)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(13)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(14)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(16)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(17)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(18)13.
+ nf2_core/user_data_path/output_queues/remove_pkt/rd_0_addr_next(11)13.
